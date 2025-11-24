@@ -1,0 +1,342 @@
+m255
+K4
+z2
+!s11f vlog 2020.4 2020.10, Oct 13 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/mardin/Documents/verification_hdl_systems/project/mips
+T_opt
+!s110 1763995488
+VOSImhlQV3o0W60^odbfiV1
+04 2 4 work tb fast 0
+=38-6c2f805537e1-69246f5f-386-8608
+o-quiet -auto_acc_if_foreign -work work +acc
+Z0 tCvgOpt 0
+n@_opt
+OL;O;2020.4;71
+vadder
+Z1 !s110 1763995479
+!i10b 1
+!s100 mZjGeAiC;6QPa@egkCK1X2
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IgA<PWY0U2?VTG9H@DZP1]3
+Z3 dC:/Users/mardin/Documents/AD_CA/CA1/mips_single_cycle
+Z4 w1763984129
+Z5 8C:/Users/mardin/Documents/AD_CA/CA1/mips_single_cycle/ELMNTS1.v
+Z6 FC:/Users/mardin/Documents/AD_CA/CA1/mips_single_cycle/ELMNTS1.v
+!i122 199
+L0 44 5
+Z7 VDg1SIo80bB@j0V0VzS_@n1
+Z8 OL;L;2020.4;71
+r1
+!s85 0
+31
+Z9 !s108 1763995479.000000
+Z10 !s107 C:/Users/mardin/Documents/AD_CA/CA1/mips_single_cycle/ELMNTS1.v|
+Z11 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/mardin/Documents/AD_CA/CA1/mips_single_cycle/ELMNTS1.v|
+!i113 0
+Z12 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R0
+valu
+R1
+!i10b 1
+!s100 BZgid;<IQP:mDSONVS]2l0
+R2
+IQ4>1J=6_`Q3KhZ<`7=UOm3
+R3
+R4
+R5
+R6
+!i122 199
+L0 22 20
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R0
+vcontroller
+R1
+!i10b 1
+!s100 UKJiiJcWS<AMYkEi>;b4f3
+R2
+I^4m7f?B9UH?JVg299ezM12
+R3
+w1763995396
+8C:/Users/mardin/Documents/AD_CA/CA1/mips_single_cycle/cntrlr.v
+FC:/Users/mardin/Documents/AD_CA/CA1/mips_single_cycle/cntrlr.v
+!i122 197
+L0 27 153
+R7
+R8
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/mardin/Documents/AD_CA/CA1/mips_single_cycle/cntrlr.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/mardin/Documents/AD_CA/CA1/mips_single_cycle/cntrlr.v|
+!i113 0
+R12
+R0
+vdata_memory
+R1
+!i10b 1
+!s100 QdgigIoRQ[9Lka:bbf@CZ2
+R2
+I9[G032CZ7=D8i>W<KNBE90
+R3
+R4
+R5
+R6
+!i122 199
+L0 77 35
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R0
+vdata_path
+R1
+!i10b 1
+!s100 631=oj3OkjbYlO0@R<^b92
+R2
+I[Y>;8kUSZL9k[TW[RLeaW3
+R3
+w1763978406
+8C:/Users/mardin/Documents/AD_CA/CA1/mips_single_cycle/datapath.v
+FC:/Users/mardin/Documents/AD_CA/CA1/mips_single_cycle/datapath.v
+!i122 198
+L0 3 81
+R7
+R8
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/mardin/Documents/AD_CA/CA1/mips_single_cycle/datapath.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/mardin/Documents/AD_CA/CA1/mips_single_cycle/datapath.v|
+!i113 0
+R12
+R0
+vinst_memory
+R1
+!i10b 1
+!s100 lj96:UPL05HZb=hA0BiXF2
+R2
+IDF^H00:DH>_T;SaH_iBW;2
+R3
+R4
+R5
+R6
+!i122 199
+L0 68 8
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R0
+vmips
+R1
+!i10b 1
+!s100 QBaR^1[0`8I3Y?2oIzD<H3
+R2
+I5;iKUFGbo]VVj`Gfm:K6:0
+R3
+w1763974434
+8C:\Users\mardin\Documents\AD_CA\CA1\mips_single_cycle\mips.v
+FC:\Users\mardin\Documents\AD_CA\CA1\mips_single_cycle\mips.v
+!i122 200
+L0 2 22
+R7
+R8
+r1
+!s85 0
+31
+R9
+!s107 C:\Users\mardin\Documents\AD_CA\CA1\mips_single_cycle\mips.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:\Users\mardin\Documents\AD_CA\CA1\mips_single_cycle\mips.v|
+!i113 0
+R12
+R0
+vmux2_to_1
+R1
+!i10b 1
+!s100 ==EOI>YYEAE7PELlf3X:e0
+R2
+I`k=>4?75D[Y8mW;>m<a>E2
+R3
+R4
+R5
+R6
+!i122 199
+L0 8 3
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R0
+vmux3_to_1
+R1
+!i10b 1
+!s100 Chon4Ohc[U8?5Vc0Ve9bl0
+R2
+Ikc]Ba2:AIiSY7FaPmghY]2
+R3
+R4
+R5
+R6
+!i122 199
+L0 3 4
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R0
+vpc
+R1
+!i10b 1
+!s100 V8G9]Z1`Tb0?E]]fF`2FK3
+R2
+I:QmbnSY18=U8I3;:=lnL60
+R3
+R4
+R5
+R6
+!i122 199
+L0 113 7
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R0
+vreg_file
+R1
+!i10b 1
+!s100 WhgI;REJ^?EjViX^PN4b[3
+R2
+IYOIT7`CT7a]EzKY8`ALGc2
+R3
+R4
+R5
+R6
+!i122 199
+L0 51 16
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R0
+vshl2
+R1
+!i10b 1
+!s100 H>YCHn=UX<cCXnl8ffmNG2
+R2
+I80lEYjH>ECB3@g4>K=3z12
+R3
+R4
+R5
+R6
+!i122 199
+L0 17 4
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R0
+vsign_extension
+R1
+!i10b 1
+!s100 BVz;Cc3l96GAJfM7i?bFD2
+R2
+I^oid7g95hSS?QKc:7nMhh3
+R3
+R4
+R5
+R6
+!i122 199
+L0 12 4
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R0
+vtb
+R1
+!i10b 1
+!s100 3jRT0Q05f^[RHM36LRYYm2
+R2
+IENKAZIzalD0YQ_`d^SCdb3
+R3
+w1699618478
+8C:/Users/mardin/Documents/AD_CA/CA1/mips_single_cycle/Tb.v
+FC:/Users/mardin/Documents/AD_CA/CA1/mips_single_cycle/Tb.v
+!i122 201
+L0 2 18
+R7
+R8
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/mardin/Documents/AD_CA/CA1/mips_single_cycle/Tb.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/mardin/Documents/AD_CA/CA1/mips_single_cycle/Tb.v|
+!i113 0
+R12
+R0
