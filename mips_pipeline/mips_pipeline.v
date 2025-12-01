@@ -185,7 +185,7 @@ module mips(
 	EXE2MEM exe2mem(
 	.write_reg_in(write_reg_exe),
 	// add signals for mem stage from exe stage and controller
-	.WriteDataIn(write_data_exe),
+	.WriteDataIn(reg_data2_exe),  //////////////////////////// from rt reg data 
 	.MemtoRegIn(MemtoReg_exe), 
 	.MemWriteIn(MemWrite_exe), 
 	.AluResIn(alu_result_exe),
