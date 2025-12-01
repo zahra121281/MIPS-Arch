@@ -13,17 +13,6 @@
 `define lui 6'b000111
 `define sltiu 6'b001011
 
-// have been tested : addi, lui, ori, add , sub, and , or, xor , nor , slt , sltu
-// `define RT 6'b000000
-// `define addi 6'b000001
-// `define slti 6'b000010
-// `define lw 6'b000011
-// `define sw 6'b000100
-// `define beq 6'b000101
-// `define j 6'b000110
-// `define jal 6'b000111
-// `define jr 6'b001000
-
 module controller(
 	clk,
 	rst,
@@ -185,3 +174,16 @@ module controller(
 			endcase
 	end
 endmodule
+
+
+
+// have been tested : addi, lui, ori, add , sub, and , or, xor , nor , slt , sltu
+// `define RT 6'b000000
+// `define addi 6'b000001
+// `define slti 6'b000010
+// `define lw 6'b000011
+// `define sw 6'b000100
+// `define beq 6'b000101
+// `define j 6'b000110
+// `define jal 6'b000111
+// `define jr 6'b001000

@@ -16,14 +16,13 @@ module IDstage (
     input 					clk,rst;
 	input           		RegWrite;
     wire        [31:0]      shifted_inst_extended; 
-    // input wire  [1:0]       RegDst; 
     input wire  [31:0]      write_data_reg; 
-    input wire  [31:0]      write_reg,pcPlus4, instruction; 
-    output wire  [31:0]     read_data1_reg,read_data2_reg,branch_adder_id;
+    input wire  [31:0]      pcPlus4, instruction; 
+    input wire  [4:0]       write_reg; 
+    output wire [31:0]     read_data1_reg,read_data2_reg,branch_adder_id;
     output wire [31:0]      inst_extended; 
     output wire  [5:0] 		func,opcode;
     output wire             zero; 
-
     // goes to id 
 	adder adder2(.data1(shifted_inst_extended),.data2(pcPlus4),.sum(branch_adder_id));
   	reg_file RegFile(.clk(clk),.rst(rst),.RegWrite(RegWrite),.read_reg1(instruction[25:21]),.read_reg2(instruction[20:16]),

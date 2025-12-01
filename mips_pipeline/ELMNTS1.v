@@ -5,7 +5,7 @@
 // 	assign out=~sel[1] ? (sel[0] ? data2 : data1 ) : data3;	
 // endmodule
 
-module mux3_to_1 #(parameter num_bit = 32)
+module mux3_to_1 #(parameter num_bit)
 (
     input  wire [num_bit-1:0] data1,
     input  wire [num_bit-1:0] data2,
