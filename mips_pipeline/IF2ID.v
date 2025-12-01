@@ -4,32 +4,32 @@ module IF2ID(
     clk,
     rst,
     flush,
-    freeze,
-    PCIn,
+    // freeze,
+    PCplus4In,
     instructionIn,
-    PC,
-    instruction
+    PCplus4OUt,
+    instructionOut
     );
   input clk, rst, flush, freeze;
-  input [`WORD_LEN-1:0] PCIn, instructionIn;
-  output reg [`WORD_LEN-1:0] PC, instruction;
+  input [`WORD_LEN-1:0] PCplus4In, instructionIn;
+  output reg [`WORD_LEN-1:0] PCplus4OUt, instructionOut;
 
   always @ (posedge clk) begin
     if (rst) begin
-      PC <= 0;
-      instruction <= 0;
+      PCplus4OUt <= 0;
+      instructionOut <= 0;
     end
     else begin
-      if (~freeze) begin
+      // if (~freeze) begin
         if (flush) begin
-          instruction <= 0;
-          PC <= 0;
+          instructionOut <= 0;
+          PCplus4OUt <= 0;
         end
         else begin
-          instruction <= instructionIn;
-          PC <= PCIn;
+          instructionOut <= instructionIn;
+          PCplus4OUt <= PCplus4In;
         end
-      end
+      // end
     end
   end
 endmodule // IF2ID

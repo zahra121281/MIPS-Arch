@@ -3,28 +3,28 @@ module IDstage (
     rst, 
     RegWrite, // cntrl
     instruction, // if2id
-    write_reg, // toplevel
-    write_data_reg, // toplevel 
-    RegDst, // controller 
+    write_reg, // to reg
+    write_data_reg, // to reg
+    pcPlus4,
+    // RegDst, // controller 
     inst_extended, // to reg
     read_data1_reg,read_data2_reg , // to reg
-    shifted_inst_extended , // to controller
+    branch_adder_id , // to controller
     func, opcode, // to controller
     zero  // to controller
 );
-
     input 					clk,rst;
 	input       [1:0]		RegWrite;
-    input wire  [1:0]       RegDst; 
-    output wire  [31:0]     read_data1_reg,read_data2_reg;
+    wire        [31:0]      shifted_inst_extended; 
+    // input wire  [1:0]       RegDst; 
+    input wire  [31:0]      write_reg,pcPlus4; 
+    output wire  [31:0]     read_data1_reg,read_data2_reg,branch_adder_id;
     output wire [31:0]      inst_extended; 
     output wire  [5:0] 		func,opcode;
-    wire        [4:0]       write_reg; 
     output wire             zero; 
 
-    // not sure 
-	mux3_to_1 #5 mux3_reg_file(.clk(clk),.data1(instruction[20:16]),.data2(instruction[15:11]),.data3(5'd31),.sel(RegDst),.out(write_reg));
-	
+    // goes to id 
+	adder adder2(.clk(clk),.data1(shifted_inst_extended),.data2(pcPlus4),.sum(branch_adder_id));
   	reg_file RegFile(.clk(clk),.rst(rst),.RegWrite(RegWrite),.read_reg1(instruction[25:21]),.read_reg2(instruction[20:16]),
 					 .write_reg(write_reg),.write_data(write_data_reg),.read_data1(read_data1_reg),.read_data2(read_data2_reg));
 	sign_extension sign_ext(.clk(clk),.primary(instruction[15:0]),.extended(inst_extended));
@@ -33,5 +33,4 @@ module IDstage (
 	assign opcode =instruction[31:26];
     //comparator
     assign zero = (data1 == data2);
-	// assign and_z_b= (zero & Branch) | (~(zero) & not_equal_Branch);
 endmodule

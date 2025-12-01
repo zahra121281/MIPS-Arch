@@ -1,37 +1,37 @@
-`timescale 1ns/1ns
-// 
-module data_path(
-	clk,
-	rst,
-	RegDst,
-	Jmp,
-	DataC,
-	RegWrite,
-	AluSrc,
-	AluSrc1,
-	Branch,
-	MemRead,
-	MemWrite,
-	MemtoReg,
-	AluOperation,
-	not_equal_Branch,
-	func,
-	opcode,
-	out1,
-	out2
-	);
+// `timescale 1ns/1ns
+// // 
+// module data_path(
+// 	clk,
+// 	rst,
+// 	RegDst,
+// 	Jmp,
+// 	DataC,
+// 	RegWrite,
+// 	AluSrc,
+// 	AluSrc1,
+// 	Branch,
+// 	MemRead,
+// 	MemWrite,
+// 	MemtoReg,
+// 	AluOperation,
+// 	not_equal_Branch,
+// 	func,
+// 	opcode,
+// 	out1,
+// 	out2
+// 	);
 
-	input 					clk,rst;
-	input       [1:0]		RegDst,Jmp;
-	input 					DataC,RegWrite,AluSrc,AluSrc1,Branch,MemRead,MemWrite,MemtoReg,not_equal_Branch;
-	input       [3:0]		AluOperation;
-	output wire  [5:0] 		func,opcode;
-	output wire [31:0] 		out1,out2;
-	wire        [31:0] 		in_pc,out_pc,instruction,write_data_reg,read_data1_reg,read_data2_reg,pc_adder,mem_read_data,
-							inst_extended,alu_input2,alu_result,read_data_mem,shifted_inst_extended,out_adder2,out_branch,shamnt,alu_input1;
-	wire 		[4:0] 		write_reg;
-	wire 		[25:0] 		shl2_inst;
-	wire 					and_z_b,zero;
+// 	input 					clk,rst;
+// 	input       [1:0]		RegDst,Jmp;
+// 	input 					DataC,RegWrite,AluSrc,AluSrc1,Branch,MemRead,MemWrite,MemtoReg,not_equal_Branch;
+// 	input       [3:0]		AluOperation;
+// 	output wire  [5:0] 		func,opcode;
+// 	output wire [31:0] 		out1,out2;
+// 	wire        [31:0] 		in_pc,out_pc,instruction,write_data_reg,read_data1_reg,read_data2_reg,pc_adder,mem_read_data,
+// 							inst_extended,alu_input2,alu_result,read_data_mem,shifted_inst_extended,out_adder2,out_branch,shamnt,alu_input1;
+// 	wire 		[4:0] 		write_reg;
+// 	wire 		[25:0] 		shl2_inst;
+// 	wire 					and_z_b,zero;
 	
 	// 1. specify stages : 
 	// IF  
@@ -78,5 +78,5 @@ module data_path(
 	// mux2_to_1 #32 mux_of_mem(.clk(clk),.data1(alu_result),.data2(read_data_mem),.sel(MemtoReg),.out(mem_read_data));
 	// mux2_to_1 #32 mux2_reg_file(.clk(clk),.data1(mem_read_data),.data2(pc_adder),.sel(DataC),.out(write_data_reg));
 
-endmodule
+// endmodule
 

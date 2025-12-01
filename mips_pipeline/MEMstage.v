@@ -1,4 +1,4 @@
-module moduleName (
+module MEMstage (
     clk,
     rst, 
     MemRead,
