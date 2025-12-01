@@ -1,4 +1,4 @@
-
+`timescale 1ns/1ns
 module mips(
 	clk,
 	rst,
@@ -58,22 +58,27 @@ module mips(
 	wire   [1:0]      RegDst_wb;  
 	wire   [4:0]   	  write_reg_wb; 
 	wire			  Regwrite_wb; 
-
+	wire        [31:0] 		in_pc,out_branch,out_adder2,out_pc; 
 	// ####################
 	// ##### PIPELINE #####
 	// ####################
+
+	// ######################### PC REG ######################### 
+	adder adder_of_pc(.data1(out_pc),.data2(32'd4),.sum(out_adder2));
+	mux2_to_1 #32 mux2_branch(.data1(out_adder2),.data2(branch_adder_id),.sel(and_z_b),.out(out_branch));  
+
+	mux3_to_1 #32 mux3_jmp(.data1(out_branch),.data2({out_adder2[31:28],jmp_addr_id,2'b00}),
+    .data3(read_data1_reg),.sel(Jmp),.out(in_pc));
+
+	pc PC(.clk(clk),.rst(rst),.in(in_pc),.out(out_pc));
+	assign pc_if = out_adder2; 
 
 	// ######################### IF STAGE #########################
 	IFstage ifstage(
 		.clk(clk), 
 		.rst(rst), 
-		.branch_adder(branch_adder_id), // from id
-		.jmp_addr(jmp_addr_id), // from id
-		.Jmp(Jmp), // cntrl
-		.and_z_b(and_z_b), // cntrl
-		.address_on_reg(read_data1_reg), // from id 
-		.instruction(instruction_if),
-		.out_pc(pc_if)
+		.out_pc(out_pc),
+		.instruction(instruction_if)
 		);
 
 	IF2ID IF2ID(
@@ -86,7 +91,6 @@ module mips(
 		.PCplus4OUt(pc_id),
 		.instructionOut(instruction_id)
     ); 
-	
 	// ######################### ID STAGE #########################
 	IDstage idstage(.clk(clk), 
 					.rst(rst), 
@@ -169,7 +173,7 @@ module mips(
 
 	// ######################### IF STAGE #########################
 
-	mux3_to_1 #5 mux3_reg_file(.clk(clk),.data1(reg_data1_out_exe),.data2(reg_data1_out_exe),.data3(5'd31),.sel(RegDst_exe),.out(write_reg_exe));
+	mux3_to_1 #5 mux3_reg_file(.data1(rt_exe),.data2(rd_exe),.data3(5'd31),.sel(RegDst_exe),.out(write_reg_exe));
 
 	EXEstage exestage(.clk(clk), 
 					.read_data1_reg(reg_data1_exe), 
@@ -241,3 +245,20 @@ module mips(
 	);
 
 endmodule
+
+
+
+
+
+// IFstage ifstage(
+// 		.clk(clk), 
+// 		.rst(rst), 
+// 		.out_pc(out_pc),
+// 		// .branch_adder(branch_adder_id), // from id
+// 		// .jmp_addr(jmp_addr_id), // from id
+// 		// .Jmp(Jmp), // cntrl
+// 		// .and_z_b(and_z_b), // cntrl
+// 		// .address_on_reg(read_data1_reg), // from id 
+// 		.instruction(instruction_if)
+// 		// .pc2id(pc_if)
+// 		);

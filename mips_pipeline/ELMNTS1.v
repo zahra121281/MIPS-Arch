@@ -1,20 +1,20 @@
 `timescale 1ns/1ns
 
-module mux3_to_1 #(parameter num_bit)(input clk,input [num_bit-1:0]data1,data2,data3, input [1:0]sel,output [num_bit-1:0]out);
+module mux3_to_1 #(parameter num_bit)(input [num_bit-1:0]data1,data2,data3, input [1:0]sel,output [num_bit-1:0]out);
 	
 	assign out=~sel[1] ? (sel[0] ? data2 : data1 ) : data3;	
 endmodule
 
-module mux2_to_1 #(parameter num_bit)(input clk,input [num_bit-1:0]data1,data2, input sel,output [num_bit-1:0]out);
+module mux2_to_1 #(parameter num_bit)(input [num_bit-1:0]data1,data2, input sel,output [num_bit-1:0]out);
 	assign out=~sel?data1:data2;
 endmodule
 
-module sign_extension(input clk,input [15:0]primary, output [31:0] extended);
+module sign_extension(input [15:0]primary, output [31:0] extended);
 
 	assign extended=$signed(primary);
 endmodule
 
-module shl2 #(parameter num_bit)(input clk,input [num_bit-1:0]adr, output [num_bit-1:0]sh_adr);
+module shl2 #(parameter num_bit)(input [num_bit-1:0]adr, output [num_bit-1:0]sh_adr);
 
 	assign sh_adr=adr<<2;
 endmodule
@@ -43,7 +43,7 @@ endmodule
 */
 
 module alu(
-    input clk,
+    // input clk,
     input [31:0] data1, data2,
     input [3:0] alu_op,
     output reg [31:0] alu_result,
@@ -107,7 +107,7 @@ module alu(
 endmodule
 
 
-module adder(input clk,input [31:0] data1,data2, output [31:0]sum);
+module adder(input [31:0] data1,data2, output [31:0]sum);
 	
 	wire co;
 	assign {co,sum}=data1+data2;
@@ -131,8 +131,7 @@ module reg_file(input clk,rst,RegWrite,input [4:0] read_reg1,read_reg2,write_reg
 	assign read_data2=register[read_reg2];
 endmodule
 
-module inst_memory(input clk,rst,input [31:0]adr,output [31:0]instruction);
-
+module inst_memory(input rst,input [31:0]adr,output [31:0]instruction) ; 
 	reg [31:0]mem_inst[0:255];
 	initial begin
 		$readmemb("instructionmemory.txt",mem_inst);
@@ -177,8 +176,7 @@ module data_memory(input clk,rst,mem_read,mem_write,input [31:0]adr,write_data,o
 endmodule
 
 module pc(input clk,rst,input [31:0]in,output reg[31:0]out);
-
-	always @(posedge clk,rst) begin
+	always @(posedge clk or posedge rst) begin
 		if(rst) out<=32'b0;
 		else out<=in;
 	end

@@ -12,7 +12,7 @@ module tb();
 initial begin
     clk = 1'b0;
 	rst = 1'b1;
-    #5 rst = 1'b0;
+    #15 rst = 1'b0;
 	#3000 $stop;
 end
     

@@ -50,7 +50,7 @@ module EXEstage (
     wire [31:0] alu_input2;
 
     mux2_to_1 #32 alu_mux1(
-        .clk(clk),
+        // .clk(clk),
         .data1(read_data1_reg),
         .data2(shamnt),
         .sel(AluSrc1),
@@ -58,7 +58,7 @@ module EXEstage (
     );
 
     mux2_to_1 #32 alu_mux(
-        .clk(clk),
+        // .clk(clk),
         .data1(read_data2_reg),
         .data2(inst_extended),
         .sel(AluSrc),
@@ -66,7 +66,7 @@ module EXEstage (
     );
 
     alu ALU(
-        .clk(clk),
+        // .clk(clk),
         .data1(alu_input1),
         .data2(alu_input2),
         .alu_op(AluOperation),
