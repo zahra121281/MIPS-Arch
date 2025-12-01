@@ -31,13 +31,13 @@ module mips(
 	
     // from id to id2exe
 	wire  [25:0]		Id_instruction;
-	
+	wire  [31:0]	instruction_id,inst_extended_id;
     // *** FIXED: Renamed to match usages & Added shamnt (5-bit)
     wire  [31:0]        read_data1_reg_id, read_data2_reg_id; 
     wire  [31:0]        branch_adder_id;
     wire  [4:0]         shamnt; 
 
-	wire  [31:0]        pc_if,pc_id ; 
+	wire  [31:0]        pc_if,pc_id,pc_exe,pc_mem; 
 	wire  [25:0]        jmp_addr_id; 
 	wire  [31:0]		instruction_id;
 	wire  [3:0]		    AluOperation_id; 
@@ -50,7 +50,7 @@ module mips(
     wire     [31:0]      alu_result_exe,reg_data1_exe,reg_data2_exe; 
 	wire                MemtoReg_exe;
 	wire      [1:0]     RegDst_exe; 
-	wire  [31:0]		instruction_exe; 
+	wire  [31:0]		instruction_exe,inst_extended_exe; 
 	wire      [4:0]     rt_exe,rd_exe,write_reg_exe; 
 	wire  [3:0]		    AluOperation_exe; 
 	wire             AluSrc_exe, AluSrc1_exe; 
@@ -73,7 +73,8 @@ module mips(
 	wire   [4:0]   	  write_reg_wb; 
 	wire			  Regwrite_wb; 
 	wire        [31:0] 		in_pc,out_branch,out_adder2,out_pc; 
-	
+	wire     [31:0]       write_data_mem;
+	wire    [31:0]   read_data_mem_mem, read_data_mem_wb;
     // ####################
 	// ##### PIPELINE #####
 	// ####################
@@ -245,7 +246,8 @@ module mips(
 		.alu_result(alu_result_mem),
 		.out1(out1),
 		.out2(out2),
-		.write_data(write_data_mem)
+		.write_data(write_data_mem),
+		.read_data(read_data_mem_mem)
 	);
 
 	MEM2WB mem2wb(
@@ -257,12 +259,14 @@ module mips(
 		.MemtoRegIn(MemtoReg_mem), 
 		.pc_in(pc_mem),
 		.DatacIn(DataC_mem),
+		.read_data_In(read_data_mem_mem)
 		// add signals for wb stage from mem stage and controller
 		.write_reg_out(write_reg_wb),
 		.pc_out(pc_wb),
 		.AluResOut(alu_result_wb),
 		.MemtoRegOut(MemtoReg_wb), 
 		.DatacOut(DataC_wb)
+		.read_data_out(read_data_mem_wb)
 	);
 
 	// ######################### WB STAGE #########################

@@ -18,6 +18,7 @@ o-quiet -auto_acc_if_foreign -work work +acc
 Z1 tCvgOpt 0
 n@_opt
 OL;O;2020.4;71
+R0
 vadder
 Z2 !s110 1764616933
 !i10b 1
@@ -231,7 +232,7 @@ R12
 R1
 n@i@f2@i@d
 vIFstage
-Z13 !s110 1764616934
+!s110 1764621235
 !i10b 1
 !s100 XKLiL2Ibc^N>QJChXccj@1
 R3
@@ -240,14 +241,14 @@ R0
 w1764603069
 8C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/IFstage.v
 FC:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/IFstage.v
-!i122 89
+!i122 97
 L0 3 30
 R7
 R8
 r1
 !s85 0
 31
-Z14 !s108 1764616934.000000
+!s108 1764621235.000000
 !s107 C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/IFstage.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/IFstage.v|
 !i113 0
@@ -278,7 +279,7 @@ R11
 R12
 R1
 vMEM2WB
-R13
+Z13 !s110 1764616934
 !i10b 1
 !s100 2=na?oZdR[[[oT@EcWZ[Y0
 R3
@@ -294,7 +295,7 @@ R8
 r1
 !s85 0
 31
-R14
+Z14 !s108 1764616934.000000
 !s107 C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/MEM2WB.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/MEM2WB.v|
 !i113 0
