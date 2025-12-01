@@ -1,30 +1,78 @@
-C:/Users/mardin/Documents/AD_CA/CA1/mips_single_cycle/cntrlr.v {1 {vlog -work work -vopt -stats=none C:/Users/mardin/Documents/AD_CA/CA1/mips_single_cycle/cntrlr.v
+{D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/datapath.v} {1 {vlog -work work -vopt -stats=none {D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/datapath.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+
+} {} {}} {D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/ID2EXE.v} {1 {vlog -work work -vopt -stats=none {D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/ID2EXE.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module ID2EXE
+
+Top level modules:
+	ID2EXE
+
+} {} {}} {D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/MEMstage.v} {1 {vlog -work work -vopt -stats=none {D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/MEMstage.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module MEMstage
+
+Top level modules:
+	MEMstage
+
+} {} {}} C:/Users/mardin/Documents/AD_CA/CA1/mips_single_cycle/cntrlr.v {1 {vlog -work work -vopt -stats=none C:/Users/mardin/Documents/AD_CA/CA1/mips_single_cycle/cntrlr.v
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 -- Compiling module controller
 
 Top level modules:
 	controller
 
-} {} {}} C:/Users/mardin/Documents/AD_CA/CA1/mips_single_cycle/mips.v {1 {vlog -work work -vopt -stats=none {C:\Users\mardin\Documents\AD_CA\CA1\mips_single_cycle\mips.v}
+} {} {}} {D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/WBstage.v} {0 {vlog -work work -vopt -stats=none {D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/WBstage.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module WBstage
+** Error: D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/WBstage.v(2): (vlog-13294) Identifier must be declared with a port mode: clk.
+** Error: D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/WBstage.v(3): (vlog-2730) Undefined variable: 'rst'.
+** Error: D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/WBstage.v(3): (vlog-13294) Identifier must be declared with a port mode: rst.
+** Error: D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/WBstage.v(4): (vlog-13294) Identifier must be declared with a port mode: alu_result.
+** Error: D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/WBstage.v(5): (vlog-13294) Identifier must be declared with a port mode: read_data_mem.
+** Error: D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/WBstage.v(6): (vlog-13294) Identifier must be declared with a port mode: MemtoReg.
+
+} {4.0 10.0} {}} {D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/register.v} {1 {vlog -work work -vopt -stats=none {D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/register.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+
+} {} {}} {D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/IF2ID.v} {0 {vlog -work work -vopt -stats=none {D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/IF2ID.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module IF2ID
+** Error: D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/IF2ID.v(14): (vlog-2163) Macro `WORD_LEN is undefined.
+** Error: D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/IF2ID.v(15): (vlog-2163) Macro `WORD_LEN is undefined.
+
+} {4.0 6.0} {}} {D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/EXEstage.v} {0 {vlog -work work -vopt -stats=none {D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/EXEstage.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module EXEstage
+** Error: D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/EXEstage.v(2): (vlog-13294) Identifier must be declared with a port mode: clk.
+
+} {4.0 5.0} {}} C:/Users/mardin/Documents/AD_CA/CA1/mips_single_cycle/mips.v {1 {vlog -work work -vopt -stats=none {C:\Users\mardin\Documents\AD_CA\CA1\mips_single_cycle\mips.v}
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 -- Compiling module mips
 
 Top level modules:
 	mips
 
-} {} {}} C:/Users/mardin/Documents/AD_CA/CA1/mips_single_cycle/Tb.v {1 {vlog -work work -vopt -stats=none C:/Users/mardin/Documents/AD_CA/CA1/mips_single_cycle/Tb.v
+} {} {}} {D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/IDstage.v} {0 {vlog -work work -vopt -stats=none {D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/IDstage.v}
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
--- Compiling module tb
+-- Compiling module IDstage
+** Error (suppressible): D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/IDstage.v(28): (vlog-13299) Undefined variable: 'instruction'.
+** Error (suppressible): D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/IDstage.v(28): (vlog-13299) Undefined variable: 'instruction'.
+** Error (suppressible): D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/IDstage.v(30): (vlog-13299) Undefined variable: 'instruction'.
+** Error (suppressible): D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/IDstage.v(32): (vlog-13299) Undefined variable: 'instruction'.
+** Error (suppressible): D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/IDstage.v(33): (vlog-13299) Undefined variable: 'instruction'.
+** Error: D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/IDstage.v(35): (vlog-2730) Undefined variable: 'data1'.
+** Error: D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/IDstage.v(35): (vlog-2730) Undefined variable: 'data2'.
+** Error: D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/IDstage.v(5): (vlog-2730) Undefined variable: 'instruction'.
+** Error: D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/IDstage.v(5): (vlog-13294) Identifier must be declared with a port mode: instruction.
+** Error: D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/IDstage.v(7): (vlog-13294) Identifier must be declared with a port mode: write_data_reg.
+
+} {9.0 14.0} {}} {D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/MEM2WB.v} {1 {vlog -work work -vopt -stats=none {D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/MEM2WB.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module MEM2WB
 
 Top level modules:
-	tb
-
-} {} {}} C:/Users/mardin/Documents/AD_CA/CA1/mips_single_cycle/datapath.v {1 {vlog -work work -vopt -stats=none C:/Users/mardin/Documents/AD_CA/CA1/mips_single_cycle/datapath.v
-Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
--- Compiling module data_path
-
-Top level modules:
-	data_path
+	MEM2WB
 
 } {} {}} C:/Users/mardin/Documents/AD_CA/CA1/mips_single_cycle/ELMNTS1.v {1 {vlog -work work -vopt -stats=none C:/Users/mardin/Documents/AD_CA/CA1/mips_single_cycle/ELMNTS1.v
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
@@ -51,4 +99,49 @@ Top level modules:
 	data_memory
 	pc
 
-} {} {}}
+} {} {}} {D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/IFstage.v} {1 {vlog -work work -vopt -stats=none {D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/IFstage.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module IFstage
+
+Top level modules:
+	IFstage
+
+} {} {}} {D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/EXE2MEM.v} {1 {vlog -work work -vopt -stats=none {D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/EXE2MEM.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module EXE2MEM
+
+Top level modules:
+	EXE2MEM
+
+} {} {}} C:/Users/mardin/Documents/AD_CA/CA1/mips_single_cycle/Tb.v {1 {vlog -work work -vopt -stats=none C:/Users/mardin/Documents/AD_CA/CA1/mips_single_cycle/Tb.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module tb
+
+Top level modules:
+	tb
+
+} {} {}} C:/Users/mardin/Documents/AD_CA/CA1/mips_single_cycle/datapath.v {1 {vlog -work work -vopt -stats=none C:/Users/mardin/Documents/AD_CA/CA1/mips_single_cycle/datapath.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module data_path
+
+Top level modules:
+	data_path
+
+} {} {}} {D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/Tb.v} {1 {vlog -work work -vopt -stats=none {D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/Tb.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module tb
+
+Top level modules:
+	tb
+
+} {} {}} {D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/mips_pipeline.v} {0 {vlog -work work -vopt -stats=none {D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/mips_pipeline.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module mips
+** Error (suppressible): D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/mips_pipeline.v(19): (vlog-2388) 'func' already declared in this scope (mips) at D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/mips_pipeline.v(11).
+** Error (suppressible): D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/mips_pipeline.v(19): (vlog-2388) 'opcode' already declared in this scope (mips) at D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/mips_pipeline.v(11).
+** Error: (vlog-13069) D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/mips_pipeline.v(103): near ".": syntax error, unexpected '.', expecting ')'.
+** Error: (vlog-13069) D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/mips_pipeline.v(160): near ".": syntax error, unexpected '.', expecting ')'.
+** Error: (vlog-13069) D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/mips_pipeline.v(229): near ")": syntax error, unexpected ')', expecting .* or '.'.
+** Error: (vlog-13069) D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/mips_pipeline.v(241): near ")": syntax error, unexpected ')', expecting .* or '.'.
+
+} {6.0 10.0} {}}

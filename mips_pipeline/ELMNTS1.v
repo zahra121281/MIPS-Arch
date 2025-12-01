@@ -19,25 +19,68 @@ module shl2 #(parameter num_bit)(input clk,input [num_bit-1:0]adr, output [num_b
 	assign sh_adr=adr<<2;
 endmodule
 
-module alu(input clk,input [31:0]data1,data2, input [3:0]alu_op, output reg[31:0]alu_result, output zero_flag);
-	always@(alu_op,data1,data2) begin
-		alu_result=32'b0;
-		case (alu_op)
-            4'b0000: alu_result = data1 + data2;           // ADD / ADDU
-            4'b0001: alu_result = data1 - data2;           // SUB / SUBU
-            4'b0010: alu_result = data1 & data2;           // AND
-            4'b0011: alu_result = data1 | data2;           // OR
-            4'b0100: alu_result = data1 ^ data2;           // XOR
-            4'b0101: alu_result = ~(data1 | data2);        // NOR
-            4'b0110: alu_result = ($signed(data1) < $signed(data2)) ? 1 : 0;  // slt/slt i
-            4'b0111: alu_result = data1 << data2[4:0];     // SLL / SLLV (variable or shamt)
-            4'b1000: alu_result = data1 >> data2[4:0];     // SRL / SRLV (logical)
-            4'b1001: alu_result = $signed(data1) >>> data2[4:0];    // SRA / SRAV (arithmetic)
-			4'b1010: alu_result = (data1 < data2) ? 1 : 0;   
+module alu(
+    input clk,
+    input [31:0] data1, data2,
+    input [3:0] alu_op,
+    output reg [31:0] alu_result,
+    output zero_flag,
+    output reg overflow
+);
+    
+    wire signed [31:0] s_data1;
+    wire signed [31:0] s_data2;
+    assign s_data1 = data1;
+    assign s_data2 = data2;
+
+    always @(*) begin
+        alu_result = 32'b0;
+        overflow = 1'b0;
+
+        case (alu_op)
+            4'b0000: begin 
+                alu_result = data1 + data2;
+                if (data1[31] == data2[31] && alu_result[31] != data1[31]) 
+                    overflow = 1'b1;
+            end
+
+            4'b0001: begin 
+                alu_result = data1 - data2;
+                if (data1[31] != data2[31] && alu_result[31] != data1[31])
+                    overflow = 1'b1;
+            end
+
+            4'b1100: begin 
+                alu_result = data1 + data2;
+                overflow = 1'b0; 
+            end
+
+            4'b1101: begin 
+                alu_result = data1 - data2;
+                overflow = 1'b0; 
+            end
+
+            4'b0010: alu_result = data1 & data2;
+            4'b0011: alu_result = data1 | data2;
+            4'b0100: alu_result = data1 ^ data2;
+            4'b0101: alu_result = ~(data1 | data2);
+            
+            4'b0110: begin 
+                if (s_data1 < s_data2) alu_result = 32'd1;
+                else alu_result = 32'd0;
+            end
+            
+            4'b1010: alu_result = (data1 < data2) ? 32'd1 : 32'd0;
+
+            4'b0111: alu_result = data2 << data1[4:0];
+            4'b1000: alu_result = data2 >> data1[4:0];
+            4'b1001: alu_result = $signed(data2) >>> data1[4:0];
+            
             default: alu_result = 32'd0;
         endcase
-	end
-	assign zero_flag=(alu_result==32'b0) ? 1'b1:1'b0;
+    end
+    
+    assign zero_flag = (alu_result == 32'b0) ? 1'b1 : 1'b0;
 endmodule
 
 
@@ -69,7 +112,7 @@ module inst_memory(input clk,rst,input [31:0]adr,output [31:0]instruction);
 
 	reg [31:0]mem_inst[0:255];
 	initial begin
-		$readmemb("instructionmemory.txt",mem_inst);
+		$readmemb("instructionmemory2.txt",mem_inst);
   	end
 	assign instruction=mem_inst[adr>>2];
 endmodule

@@ -1,3 +1,4 @@
+/*
 module EXEstage (
     clk,
     read_data1_reg,
@@ -20,4 +21,58 @@ module EXEstage (
 	alu ALU(.clk(clk),.data1(alu_input1),.data2(alu_input2),.alu_op(AluOperation),.alu_result(alu_result),.zero_flag(zero));
     
 endmodule
+*/
 
+module EXEstage (
+    clk,
+    read_data1_reg,
+    read_data2_reg,
+    inst_extended,
+    shamnt,
+    AluSrc1,
+    AluSrc,
+    AluOperation,
+    zero_flag, 
+    alu_result,
+    overflow
+);
+
+    input wire              clk;
+    input wire  [31:0]      read_data1_reg, read_data2_reg, inst_extended, shamnt;
+    input wire              AluSrc1, AluSrc;
+    input wire  [3:0]       AluOperation;
+    
+    output wire             zero_flag;
+    output wire [31:0]      alu_result; 
+    output wire             overflow;
+
+    wire [31:0] alu_input1;
+    wire [31:0] alu_input2;
+
+    mux2_to_1 #32 alu_mux1(
+        .clk(clk),
+        .data1(read_data1_reg),
+        .data2(shamnt),
+        .sel(AluSrc1),
+        .out(alu_input1)
+    );
+
+    mux2_to_1 #32 alu_mux2(
+        .clk(clk),
+        .data1(read_data2_reg),
+        .data2(inst_extended),
+        .sel(AluSrc),
+        .out(alu_input2)
+    );
+
+    alu ALU(
+        .clk(clk),
+        .data1(alu_input1),
+        .data2(alu_input2),
+        .alu_op(AluOperation),
+        .alu_result(alu_result),
+        .zero_flag(zero_flag),
+        .overflow(overflow)
+    );
+    
+endmodule

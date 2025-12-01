@@ -1,0 +1,407 @@
+m255
+K4
+z2
+!s11f vlog 2020.4 2020.10, Oct 13 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline
+vadder
+Z1 !s110 1764589339
+!i10b 1
+!s100 mZjGeAiC;6QPa@egkCK1X2
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IoL?zMa<VPY<GHmZY?akn<3
+R0
+Z3 w1764588171
+Z4 8D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/ELMNTS1.v
+Z5 FD:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/ELMNTS1.v
+!i122 1
+L0 44 5
+Z6 VDg1SIo80bB@j0V0VzS_@n1
+Z7 OL;L;2020.4;71
+r1
+!s85 0
+31
+Z8 !s108 1764589339.000000
+Z9 !s107 D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/ELMNTS1.v|
+Z10 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/ELMNTS1.v|
+!i113 0
+Z11 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z12 tCvgOpt 0
+valu
+R1
+!i10b 1
+!s100 BZgid;<IQP:mDSONVS]2l0
+R2
+InSl^TjaUh7@B7SX_jOfXL3
+R0
+R3
+R4
+R5
+!i122 1
+L0 22 20
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R12
+vcontroller
+R1
+!i10b 1
+!s100 UKJiiJcWS<AMYkEi>;b4f3
+R2
+I=JR<Q=1FTa>;8ZlgS[SdA1
+R0
+Z13 w1764585990
+8D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/cntrlr.v
+FD:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/cntrlr.v
+!i122 0
+L0 27 153
+R6
+R7
+r1
+!s85 0
+31
+R8
+!s107 D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/cntrlr.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/cntrlr.v|
+!i113 0
+R11
+R12
+vdata_memory
+R1
+!i10b 1
+!s100 QdgigIoRQ[9Lka:bbf@CZ2
+R2
+I1Md[P^hl7l9HHYWIgY]n<0
+R0
+R3
+R4
+R5
+!i122 1
+L0 77 35
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R12
+vEXE2MEM
+R1
+!i10b 1
+!s100 LM4aKn4]m7:gk]h`H>d281
+R2
+IbY69;[0[OjF<n8nTc`8?e1
+R0
+R13
+8D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/EXE2MEM.v
+FD:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/EXE2MEM.v
+!i122 2
+L0 3 51
+R6
+R7
+r1
+!s85 0
+31
+R8
+!s107 D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/EXE2MEM.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/EXE2MEM.v|
+!i113 0
+R11
+R12
+n@e@x@e2@m@e@m
+vID2EXE
+R1
+!i10b 1
+!s100 =8SDlF3hC1gO10ORjLZiN0
+R2
+IT>l[Oo1Z8VfKA8X]E4V^@2
+R0
+R13
+8D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/ID2EXE.v
+FD:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/ID2EXE.v
+!i122 3
+L0 6 80
+R6
+R7
+r1
+!s85 0
+31
+R8
+!s107 D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/ID2EXE.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/ID2EXE.v|
+!i113 0
+R11
+R12
+n@i@d2@e@x@e
+vIFstage
+Z14 !s110 1764589340
+!i10b 1
+!s100 mjMGf?fjXKbE_XzFEP]W_0
+R2
+IQdFSmO28zd4oV0S4@^oFa2
+R0
+R13
+8D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/IFstage.v
+FD:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/IFstage.v
+!i122 4
+L0 4 27
+R6
+R7
+r1
+!s85 0
+31
+Z15 !s108 1764589340.000000
+!s107 D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/IFstage.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/IFstage.v|
+!i113 0
+R11
+R12
+n@i@fstage
+vinst_memory
+R1
+!i10b 1
+!s100 4X@HJ?Z2S8?GWPJ5kz85<0
+R2
+IEV_T7bR2UDOOz5eCX[]ki1
+R0
+R3
+R4
+R5
+!i122 1
+L0 68 8
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R12
+vMEM2WB
+R14
+!i10b 1
+!s100 2=na?oZdR[[[oT@EcWZ[Y0
+R2
+IZ@0[Q>JSagccYoD9n03Ca3
+R0
+R13
+8D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/MEM2WB.v
+FD:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/MEM2WB.v
+!i122 5
+L0 3 39
+R6
+R7
+r1
+!s85 0
+31
+R15
+!s107 D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/MEM2WB.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/MEM2WB.v|
+!i113 0
+R11
+R12
+n@m@e@m2@w@b
+vMEMstage
+R14
+!i10b 1
+!s100 ^@8THDNF0I]2IhOIERZb;3
+R2
+InLE4Z^GMRfLZi2C@A8aUZ2
+R0
+R13
+8D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/MEMstage.v
+FD:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/MEMstage.v
+!i122 6
+L0 1 16
+R6
+R7
+r1
+!s85 0
+31
+R15
+!s107 D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/MEMstage.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/MEMstage.v|
+!i113 0
+R11
+R12
+n@m@e@mstage
+vmux2_to_1
+R1
+!i10b 1
+!s100 ==EOI>YYEAE7PELlf3X:e0
+R2
+In_[2HgRYCGT9CN=Rd^zmf2
+R0
+R3
+R4
+R5
+!i122 1
+L0 8 3
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R12
+vmux3_to_1
+R1
+!i10b 1
+!s100 Chon4Ohc[U8?5Vc0Ve9bl0
+R2
+I3@QfclQZSZJ=4m:AC_cK40
+R0
+R3
+R4
+R5
+!i122 1
+L0 3 4
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R12
+vpc
+R1
+!i10b 1
+!s100 V8G9]Z1`Tb0?E]]fF`2FK3
+R2
+IeUXN6[8AZP:3Wj2B?UgH32
+R0
+R3
+R4
+R5
+!i122 1
+L0 113 7
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R12
+vreg_file
+R1
+!i10b 1
+!s100 WhgI;REJ^?EjViX^PN4b[3
+R2
+IB`PQi<We10VQeBBGM2k[:3
+R0
+R3
+R4
+R5
+!i122 1
+L0 51 16
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R12
+vshl2
+R1
+!i10b 1
+!s100 H>YCHn=UX<cCXnl8ffmNG2
+R2
+IeR9YO^c5>>?1bAcFB]?^]2
+R0
+R3
+R4
+R5
+!i122 1
+L0 17 4
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R12
+vsign_extension
+R1
+!i10b 1
+!s100 BVz;Cc3l96GAJfM7i?bFD2
+R2
+Ikh@3l=4CCednO0;`cPURC2
+R0
+R3
+R4
+R5
+!i122 1
+L0 12 4
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R12
+vtb
+R14
+!i10b 1
+!s100 TGH0nFajhZ:d^Jdd`C;Ek3
+R2
+I9cgkj672;F>gC9W7ENR;>1
+R0
+w1764588123
+8D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/Tb.v
+FD:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/Tb.v
+!i122 7
+L0 3 33
+R6
+R7
+r1
+!s85 0
+31
+R15
+!s107 D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/Tb.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/1_1/MIPS-Arch/mips_pipeline/Tb.v|
+!i113 0
+R11
+R12
