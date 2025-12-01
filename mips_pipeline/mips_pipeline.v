@@ -7,6 +7,7 @@ module mips(
 	);
 	input 					clk,rst;
 	output wire [31:0] 		out1,out2;
+	wire 					flush; 
 	wire                    zero_ID; 
 	wire 		[1:0]		RegDst,Jmp;
 	wire 					Regwrite,AluSrc_id,AluSrc1_id,Branch,MemRead_ctrl,MemWrite_ctrl,MemtoReg,not_equal_Branch;
@@ -127,6 +128,7 @@ module mips(
 				  // which stage? 
 				  .Jmp(Jmp),
 				  .Branch(Branch),
+				  .flush(flush),
 				  .not_equal_Branch(not_equal_Branch));
 
 	ID2EXE id2exe(

@@ -40,16 +40,18 @@ module controller(
 	MemRead,
 	MemWrite,
 	MemtoReg,
-	AluOperation
+	AluOperation,
+	flush
 	);
 	input 				clk,rst;
 	input wire      [5:0] 	opcode,func;
 	output reg [1:0]	RegDst,Jmp;
 	output reg		    DataC,Regwrite,AluSrc,AluSrc1,Branch,MemRead,MemWrite,MemtoReg,not_equal_Branch;
 	output reg [3:0]    AluOperation;
+	output reg			flush; 
 
 	always@(opcode,func) begin
-		{RegDst,Jmp,DataC,Regwrite,AluSrc,AluSrc1,Branch,MemRead,MemWrite,MemtoReg,AluOperation,not_equal_Branch}=0;
+		{RegDst,Jmp,DataC,Regwrite,AluSrc,AluSrc1,Branch,MemRead,MemWrite,MemtoReg,AluOperation,not_equal_Branch,flush}=0;
 		case(opcode) 
 			`RT: begin
 				RegDst     = 2'b01;
@@ -95,11 +97,13 @@ module controller(
 					6'b001000: begin                    // jr
 						Regwrite = 1'b0;
 						Jmp      = 2'b10;
+						flush 	 = 1'b1; 
 					end
 					6'b001001: begin                    // jalr
 					//	RegDst   = 2'b10;  
 						Jmp      = 2'b10;
 						DataC=1;
+						flush 	 = 1'b1; 
 					end
 
 					default: Regwrite = 1'b0;
@@ -139,13 +143,16 @@ module controller(
 				`beq: begin
 					AluOperation=4'b0001;
 					Branch=1;
+					flush =1'b1; 
 				end
 				`bne: begin
 					AluOperation=4'b0001;
 					not_equal_Branch=1;
+					flush 	 = 1'b1; 
 				end
 				`j: begin
 					Jmp=2'b01;
+					flush 	 = 1'b1; 
 				 end
 				 // not sure yet about DataC
 				`jal: begin
@@ -153,6 +160,7 @@ module controller(
 					DataC=1;
 					Regwrite=1;
 					Jmp=2'b01;
+					flush = 1'b1; 
 				 end
 				`ori: begin
 					Regwrite=1;
