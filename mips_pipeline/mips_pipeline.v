@@ -68,7 +68,7 @@ module mips(
 	mux2_to_1 #32 mux2_branch(.data1(out_adder2),.data2(branch_adder_id),.sel(and_z_b),.out(out_branch));  
 
 	mux3_to_1 #32 mux3_jmp(.data1(out_branch),.data2({out_adder2[31:28],jmp_addr_id,2'b00}),
-    .data3(read_data1_reg),.sel(Jmp),.out(in_pc));
+    .data3(read_data1_reg_id),.sel(Jmp),.out(in_pc));
 
 	pc PC(.clk(clk),.rst(rst),.in(in_pc),.out(out_pc));
 	assign pc_if = out_adder2; 

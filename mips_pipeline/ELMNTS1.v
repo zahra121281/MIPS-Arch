@@ -1,13 +1,44 @@
 `timescale 1ns/1ns
 
-module mux3_to_1 #(parameter num_bit)(input [num_bit-1:0]data1,data2,data3, input [1:0]sel,output [num_bit-1:0]out);
+// module mux3_to_1 #(parameter num_bit)(input [num_bit-1:0]data1,data2,data3, input [1:0]sel,output [num_bit-1:0]out);
 	
-	assign out=~sel[1] ? (sel[0] ? data2 : data1 ) : data3;	
+// 	assign out=~sel[1] ? (sel[0] ? data2 : data1 ) : data3;	
+// endmodule
+
+module mux3_to_1 #(parameter num_bit = 32)
+(
+    input  wire [num_bit-1:0] data1,
+    input  wire [num_bit-1:0] data2,
+    input  wire [num_bit-1:0] data3,
+    input  wire [1:0]       sel,
+    output reg  [num_bit-1:0] out
+);
+    always @(*) begin
+        case (sel)
+            2'b00: out = data1;
+            2'b01: out = data2;
+            2'b10: out = data3;
+            default: out = data1;   // or 0, but never 'z
+        endcase
+    end
 endmodule
 
-module mux2_to_1 #(parameter num_bit)(input [num_bit-1:0]data1,data2, input sel,output [num_bit-1:0]out);
-	assign out=~sel?data1:data2;
+
+
+// module mux2_to_1 #(parameter num_bit)(input [num_bit-1:0]data1,data2, input sel,output [num_bit-1:0]out);
+// 	assign out=~sel?data1:data2;
+// endmodule
+
+module mux2_to_1 #(parameter WIDTH = 32)
+(
+    input  wire [WIDTH-1:0] data1,
+    input  wire [WIDTH-1:0] data2,
+    input  wire             sel,
+    output wire [WIDTH-1:0] out
+);
+    assign out = sel ? data2 : data1;
 endmodule
+
 
 module sign_extension(input [15:0]primary, output [31:0] extended);
 
