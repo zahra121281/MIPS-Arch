@@ -9,7 +9,6 @@ module EXEstage (
     zero_flag, 
     alu_result
 );
-    input wire       clk; 
     input wire      [31:0]      read_data1_reg,read_data2_reg,inst_extended,shamnt;
     input wire                  AluSrc1,AluSrc;
     input wire      [3:0]		AluOperation;

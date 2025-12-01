@@ -4,7 +4,7 @@ module IDstage (
     RegWrite, // cntrl
     instruction, // if2id
     write_reg, // to reg
-    write_data_reg, // to reg
+    write_data_reg, 
     pcPlus4,
     // RegDst, // controller 
     inst_extended, // to reg
@@ -17,7 +17,8 @@ module IDstage (
 	input       [1:0]		RegWrite;
     wire        [31:0]      shifted_inst_extended; 
     // input wire  [1:0]       RegDst; 
-    input wire  [31:0]      write_reg,pcPlus4; 
+    input wire  [31:0]      write_data_reg; 
+    input wire  [31:0]      write_reg,pcPlus4, instruction; 
     output wire  [31:0]     read_data1_reg,read_data2_reg,branch_adder_id;
     output wire [31:0]      inst_extended; 
     output wire  [5:0] 		func,opcode;
@@ -32,5 +33,5 @@ module IDstage (
 	assign func=instruction[5:0];
 	assign opcode =instruction[31:26];
     //comparator
-    assign zero = (data1 == data2);
+    assign zero = (read_data1_reg == read_data2_reg);
 endmodule

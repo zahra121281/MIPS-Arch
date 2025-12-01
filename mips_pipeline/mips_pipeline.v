@@ -8,7 +8,6 @@ module mips(
 	input 					clk,rst;
 	output wire [31:0] 		out1,out2;
 	wire                    zero_ID; 
-	wire 		[5:0] 		opcode,func;
 	wire 		[1:0]		RegDst,Jmp;
 	wire 					Regwrite,AluSrc_id,AluSrc1_id,Branch,MemRead_ctrl,MemWrite_ctrl,MemtoReg,not_equal_Branch;
 	//////////
@@ -99,7 +98,7 @@ module mips(
 					.read_data2_reg(read_data2_reg_id), 
 					.pcPlus4(pc_id),
 					.zero(zero_ID),
-					.branch_adder_id(branch_adder_id)
+					.branch_adder_id(branch_adder_id),
 					.func(func),
 					.opcode(opcode));
 
@@ -144,19 +143,18 @@ module mips(
 		.AluSrc1In(AluSrc1_id),
 		// add signals for mem stage from exe stage and controller
 		.MemWriteIn(MemWrite_id), 
-		.MemWriteIn(MemWrite_id), 
 		.MemtoRegIn(MemtoReg_id),
 		.PCplus4In(pc_id),
 		.DatacIn(DataC_id),
 		// add signals for wb stage from mem stage and controller
 		///////////////////////// output 
 		// add signals for Exe stage from id stage and controller
-		.AluOp_in(AluOperation_exe),
+		.AluOp_out(AluOperation_exe),
 		.DatacOut(DataC_exe),
 		.reg_data1_out(reg_data1_exe),
 		.reg_data2_out(reg_data2_exe),
 		.inst_extended_out(inst_extended_exe),
-		.RegDstOut(RegDst_exe) 
+		.RegDstOut(RegDst_exe) ,
 		.reg1_out(rt_exe),
 		.reg2_out(rd_exe),
 		.MemWriteOut(MemWrite_exe), 
@@ -225,7 +223,7 @@ module mips(
 		.pc_out(pc_wb),
 		.AluResOut(alu_result_wb),
 		.MemtoRegOut(MemtoReg_wb), 
-		.DatacOut(DataC_wb),
+		.DatacOut(DataC_wb)
 	);
 
 	// ######################### WB STAGE #########################
@@ -237,7 +235,7 @@ module mips(
 		.read_data_mem(read_data_mem_wb),
 		.MemtoReg(MemtoReg_wb), 
 		.DataC(DataC_wb),
-		.write_data_reg(write_data_reg_wb),
+		.write_data_reg(write_data_reg_wb)
 	);
 
 endmodule

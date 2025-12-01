@@ -10,8 +10,7 @@ module IF2ID(
     PCplus4OUt,
     instructionOut
     );
-  input clk, rst, flush;
-  // , freeze;
+  input clk, rst, flush, freeze;
   input [31:0] PCplus4In, instructionIn;
   output reg [31:0] PCplus4OUt, instructionOut;
 
