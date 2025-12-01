@@ -63,9 +63,9 @@ module controller(
 				Jmp        = 2'b00;
 				case (func)
 					6'b100000: AluOperation = 4'b0000;  // add
-					6'b100001: AluOperation = 4'b0000;  // addu
+					6'b100001: AluOperation = 4'b1100;  // addu
 					6'b100010: AluOperation = 4'b0001;  // sub
-					6'b100011: AluOperation = 4'b0001;  // subu
+					6'b100011: AluOperation = 4'b1101;  // subu
 					6'b100100: AluOperation = 4'b0010;  // and
 					6'b100101: AluOperation = 4'b0011;  // or
 					6'b100110: AluOperation = 4'b0100;  // xor
