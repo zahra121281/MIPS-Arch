@@ -37,9 +37,8 @@ module mips(
     wire  [31:0]        branch_adder_id;
     wire  [4:0]         shamnt; 
 
-	wire  [31:0]        pc_if,pc_id,pc_exe,pc_mem; 
+	wire  [31:0]        pc_if,pc_id,pc_exe,pc_mem,pc_wb; 
 	wire  [25:0]        jmp_addr_id; 
-	wire  [31:0]		instruction_id;
 	wire  [3:0]		    AluOperation_id; 
 	
 	// from Exe 
@@ -96,7 +95,7 @@ module mips(
 		.rst(rst), 
 		.out_pc(out_pc),
 		.instruction(instruction_if)
-		);
+	);
 
 	IF2ID IF2ID(
 		.clk(clk),
@@ -121,38 +120,42 @@ module mips(
 					.read_data2_reg(read_data2_reg_id), 
 					.pcPlus4(pc_id),
 					.zero(zero_ID),
-					.branch_adder_id(branch_adder_id),
-					.func(func),
-					.opcode(opcode));
+					.branch_adder_id(branch_adder_id)); 
+					// .func(func),
+					// .opcode(opcode));
 
 	assign jmp_addr_id = instruction_id[25:0]; 
 	assign and_z_b = (zero_ID & Branch) | (~(zero_ID) & not_equal_Branch);
 
+	// assign func =instruction_id[5:0];
+	// assign opcode =instruction_id[31:26];
+    
 	// ######################
 	// ##### CONTROLLER #####
 	// ######################
-	controller CU(.clk(clk),
-				.rst(rst),
-				.opcode(opcode),
-				.func(func),
+	controller CU(
+				// .clk(clk),
+				// .rst(rst),
+				.opcode(instruction_id[31:26]),
+				.func(instruction_id[5:0]),
 				// exe signals 
-				  .AluOperation(AluOperation_id),
-				  .AluSrc(AluSrc_id),
-				  .AluSrc1(AluSrc1_id),
-				  .RegDst(RegDst),
-				  // MEM
-                  // *** FIXED: Connected directly to _id wires (to go to ID2EXE)
-				  .MemWrite(MemWrite_id),
-				  .MemRead(MemRead_id),
-				  //WB
-				  .MemtoReg(MemtoReg_id),
-	              .DataC(DataC_id),
-				  .Regwrite(Regwrite_id),
-				  // which stage? 
-				  .Jmp(Jmp),
-				  .Branch(Branch),
-				  .flush(flush),
-				  .not_equal_Branch(not_equal_Branch));
+				.AluOperation(AluOperation_id),
+				.AluSrc(AluSrc_id),
+				.AluSrc1(AluSrc1_id),
+				.RegDst(RegDst),
+				// MEM
+				// *** FIXED: Connected directly to _id wires (to go to ID2EXE)
+				.MemWrite(MemWrite_id),
+				.MemRead(MemRead_id),
+				//WB
+				.MemtoReg(MemtoReg_id),
+				.DataC(DataC_id),
+				.Regwrite(Regwrite_id),
+				// which stage? 
+				.Jmp(Jmp),
+				.Branch(Branch),
+				.flush(flush),
+				.not_equal_Branch(not_equal_Branch));
 
 	ID2EXE id2exe(
 		.clk(clk),
@@ -259,13 +262,13 @@ module mips(
 		.MemtoRegIn(MemtoReg_mem), 
 		.pc_in(pc_mem),
 		.DatacIn(DataC_mem),
-		.read_data_In(read_data_mem_mem)
+		.read_data_In(read_data_mem_mem),
 		// add signals for wb stage from mem stage and controller
 		.write_reg_out(write_reg_wb),
 		.pc_out(pc_wb),
 		.AluResOut(alu_result_wb),
 		.MemtoRegOut(MemtoReg_wb), 
-		.DatacOut(DataC_wb)
+		.DatacOut(DataC_wb),
 		.read_data_out(read_data_mem_wb)
 	);
 

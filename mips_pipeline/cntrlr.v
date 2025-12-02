@@ -1,3 +1,5 @@
+`timescale 1ns/1ns
+
 `define RT 6'b000000
 `define addi 6'b001000
 `define slti 6'b001010
@@ -14,8 +16,8 @@
 `define sltiu 6'b001011
 
 module controller(
-	clk,
-	rst,
+	// clk,
+	// rst,
 	opcode,
 	func,
 	RegDst,
@@ -32,14 +34,14 @@ module controller(
 	AluOperation,
 	flush
 	);
-	input 				clk,rst;
+	// input 				clk,rst;
 	input wire      [5:0] 	opcode,func;
 	output reg [1:0]	RegDst,Jmp;
 	output reg		    DataC,Regwrite,AluSrc,AluSrc1,Branch,MemRead,MemWrite,MemtoReg,not_equal_Branch;
 	output reg [3:0]    AluOperation;
 	output reg			flush; 
 
-	always@(opcode,func) begin
+	always@(*) begin
 		{RegDst,Jmp,DataC,Regwrite,AluSrc,AluSrc1,Branch,MemRead,MemWrite,MemtoReg,AluOperation,not_equal_Branch,flush}=0;
 		case(opcode) 
 			`RT: begin

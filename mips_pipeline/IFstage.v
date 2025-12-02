@@ -9,7 +9,7 @@ module IFstage (
     // Jmp, // cntrl
     // and_z_b, // cntrl
     // address_on_reg, // from id 
-    instruction, // out to id 
+    instruction // out to id 
     // pc2id
 );
     input 					clk,rst ; //,and_z_b;

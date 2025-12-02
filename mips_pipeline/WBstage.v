@@ -6,7 +6,7 @@ module WBstage (
     MemtoReg, 
     DataC,
     write_data_reg,
-    pc_adder,
+    pc_adder
 );
     input wire              clk, rst, MemtoReg; 
     input wire              DataC; 
