@@ -134,12 +134,12 @@ module controller(
 				`beq: begin
 					AluOperation=4'b0001;
 					Branch=1;
-					flush =1'b1; 
+					flush =1'b0; 
 				end
 				`bne: begin
 					AluOperation=4'b0001;
 					not_equal_Branch=1;
-					flush 	 = 1'b1; 
+					flush 	 = 1'b0; 
 				end
 				`j: begin
 					Jmp=2'b01;

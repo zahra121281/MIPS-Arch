@@ -18,6 +18,8 @@ module mips(
     //////////
 	wire        [31:0]		instruction_if;
 	wire        and_z_b; 
+	wire 		flush_ctrl;
+	wire 		final_flush;
 	
     // from id to controller : 
 	wire  [31:0]    inst_extended; 
@@ -100,7 +102,7 @@ module mips(
 	IF2ID IF2ID(
 		.clk(clk),
 		.rst(rst),
-		.flush(flush),  
+		.flush(final_flush),  
 		.PCplus4In(pc_if),
 		.instructionIn(instruction_if),
 		.PCplus4OUt(pc_id),
@@ -126,6 +128,7 @@ module mips(
 
 	assign jmp_addr_id = instruction_id[25:0]; 
 	assign and_z_b = (zero_ID & Branch) | (~(zero_ID) & not_equal_Branch);
+	assign final_flush = flush_ctrl | and_z_b;
 
 	// assign func =instruction_id[5:0];
 	// assign opcode =instruction_id[31:26];
@@ -139,23 +142,23 @@ module mips(
 				.opcode(instruction_id[31:26]),
 				.func(instruction_id[5:0]),
 				// exe signals 
-				.AluOperation(AluOperation_id),
-				.AluSrc(AluSrc_id),
-				.AluSrc1(AluSrc1_id),
-				.RegDst(RegDst),
-				// MEM
-				// *** FIXED: Connected directly to _id wires (to go to ID2EXE)
-				.MemWrite(MemWrite_id),
-				.MemRead(MemRead_id),
-				//WB
-				.MemtoReg(MemtoReg_id),
-				.DataC(DataC_id),
-				.Regwrite(Regwrite_id),
-				// which stage? 
-				.Jmp(Jmp),
-				.Branch(Branch),
-				.flush(flush),
-				.not_equal_Branch(not_equal_Branch));
+				  .AluOperation(AluOperation_id),
+				  .AluSrc(AluSrc_id),
+				  .AluSrc1(AluSrc1_id),
+				  .RegDst(RegDst),
+				  // MEM
+                  // *** FIXED: Connected directly to _id wires (to go to ID2EXE)
+				  .MemWrite(MemWrite_id),
+				  .MemRead(MemRead_id),
+				  //WB
+				  .MemtoReg(MemtoReg_id),
+	              .DataC(DataC_id),
+				  .Regwrite(Regwrite_id),
+				  // which stage? 
+				  .Jmp(Jmp),
+				  .Branch(Branch),
+				  .flush(flush_ctrl),
+				  .not_equal_Branch(not_equal_Branch));
 
 	ID2EXE id2exe(
 		.clk(clk),
