@@ -13,7 +13,7 @@ module EXE2MEM(
     input       [31:0]  AluResIn,          // alu_result_exe
     input               DatacIn,           // DataC_exe
     input       [31:0]  pc_in,             // pc_exe
-
+    input               RegwriteIn,
     // ---------------- TO MEM STAGE ----------------
     output reg  [4:0]   write_reg_out,     // write_reg_mem
     output reg  [31:0]  pc_out,            // pc_mem
@@ -22,7 +22,8 @@ module EXE2MEM(
     output reg  [31:0]  AluResOut,         // alu_result_mem
     output reg          MemtoRegOut,       // MemtoReg_mem
     output reg          DatacOut,          // DataC_mem
-    output reg  [31:0]  WriteDataOut       // write_data_mem
+    output reg  [31:0]  WriteDataOut,       // write_data_mem
+    output reg          RegwriteOut
 );
 
     //======================================================
@@ -38,6 +39,7 @@ module EXE2MEM(
             MemtoRegOut     <= 1'b0;
             DatacOut        <= 1'b0;
             WriteDataOut    <= 32'b0;
+            RegwriteOut     <= 1'b0;
         end else begin
             write_reg_out   <= write_reg_in;
             pc_out          <= pc_in;
@@ -47,6 +49,7 @@ module EXE2MEM(
             MemtoRegOut     <= MemtoRegIn;
             DatacOut        <= DatacIn;
             WriteDataOut    <= WriteDataIn;
+            RegwriteOut         <= RegwriteIn;
         end
     end
 

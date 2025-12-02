@@ -8,12 +8,12 @@ module mips(
 	);
 	input 					clk,rst;
 	output wire [31:0] 		out1,out2;
-	wire 					flush; 
+	// wire 					flush; 
 	wire                    zero_ID; 
 	wire 		[1:0]		RegDst,Jmp;
 	
     // *** FIXED: Removed extra _ctrl wires, using direct connections
-	wire 					Regwrite,AluSrc_id,AluSrc1_id,Branch,not_equal_Branch; 
+	wire 					AluSrc_id,AluSrc1_id,Branch,not_equal_Branch; 
 	
     //////////
 	wire        [31:0]		instruction_if;
@@ -22,8 +22,8 @@ module mips(
 	wire 		final_flush;
 	
     // from id to controller : 
-	wire  [31:0]    inst_extended; 
-    wire  [5:0] 	func,opcode;
+	// wire  [31:0]    inst_extended; 
+    // wire  [5:0] 	func,opcode;
 	
     // *** FIXED: Using these wires for direct Controller -> ID2EXE connection
     wire 			MemWrite_id, MemRead_id; 
@@ -32,7 +32,7 @@ module mips(
 	wire			Regwrite_id; 
 	
     // from id to id2exe
-	wire  [25:0]		Id_instruction;
+	// wire  [25:0]		Id_instruction;
 	wire  [31:0]	instruction_id,inst_extended_id;
     // *** FIXED: Renamed to match usages & Added shamnt (5-bit)
     wire  [31:0]        read_data1_reg_id, read_data2_reg_id; 
@@ -40,42 +40,42 @@ module mips(
     wire  [4:0]         shamnt; 
 
 	wire  [31:0]        pc_if,pc_id,pc_exe,pc_mem,pc_wb; 
-	wire  [25:0]        jmp_addr_id; 
+	// wire  [25:0]        jmp_addr_id; 
 	wire  [3:0]		    AluOperation_id; 
 	
 	// from Exe 
-	wire					Regwrite_exe;  
-	wire 					DataC_exe;
-	wire                 zero_exe;
-    wire                 overflow_exe; // *** FIXED: Added for EXEstage output
-    wire     [31:0]      alu_result_exe,reg_data1_exe,reg_data2_exe; 
+	wire				Regwrite_exe;  
+	wire 				DataC_exe;
+	wire                zero_exe;
+    wire                overflow_exe; // *** FIXED: Added for EXEstage output
+    wire     [31:0]     alu_result_exe,reg_data1_exe,reg_data2_exe; 
 	wire                MemtoReg_exe;
 	wire      [1:0]     RegDst_exe; 
-	wire  [31:0]		instruction_exe,inst_extended_exe; 
+	wire  [31:0]		inst_extended_exe; 
 	wire      [4:0]     rt_exe,rd_exe,write_reg_exe; 
 	wire  [3:0]		    AluOperation_exe; 
-	wire             AluSrc_exe, AluSrc1_exe; 
+	wire             	AluSrc_exe, AluSrc1_exe; 
 	
-	wire            MemWrite_exe,MemRead_exe; 
+	wire            	MemWrite_exe,MemRead_exe; 
 	// mem 
 	wire                MemtoReg_mem; 
-	wire 					DataC_mem;
-	wire					Regwrite_mem; 
-	wire      [1:0]     RegDst_mem; 
-	wire     [31:0]      alu_result_mem; 
-	wire      [4:0]     write_reg_mem; 
+	wire 				DataC_mem;
+	wire				Regwrite_mem; 
+	// wire      [1:0]     RegDst_mem; 
+	wire     [31:0]     alu_result_mem; 
+	wire      [4:0]   write_reg_mem; 
 	wire              MemWrite_mem,MemRead_mem; 
 	// wb
 	wire   [31:0]     write_data_reg_wb; 
-	wire     [31:0]   alu_result_wb; 
+	wire   [31:0]     alu_result_wb; 
 	wire 			  DataC_wb;
 	wire              MemtoReg_wb; 
-	wire   [1:0]      RegDst_wb;  
+	// wire   [1:0]      RegDst_wb;  
 	wire   [4:0]   	  write_reg_wb; 
 	wire			  Regwrite_wb; 
-	wire        [31:0] 		in_pc,out_branch,out_adder2,out_pc; 
-	wire     [31:0]       write_data_mem;
-	wire    [31:0]   read_data_mem_mem, read_data_mem_wb;
+	wire   [31:0] 	  in_pc,out_branch,out_adder2,out_pc; 
+	wire   [31:0]     write_data_mem;
+	wire   [31:0]     read_data_mem_mem, read_data_mem_wb;
     // ####################
 	// ##### PIPELINE #####
 	// ####################
@@ -85,7 +85,7 @@ module mips(
 	mux2_to_1 #32 mux2_branch(.data1(out_adder2),.data2(branch_adder_id),.sel(and_z_b),.out(out_branch));  
 
     // *** FIXED: Connected to read_data1_reg_id (Correct wire from IDstage)
-	mux3_to_1 #32 mux3_jmp(.data1(out_branch),.data2({out_adder2[31:28],jmp_addr_id,2'b00}),
+	mux3_to_1 #32 mux3_jmp(.data1(out_branch),.data2({out_adder2[31:28],instruction_id[25:0],2'b00}),
     .data3(read_data1_reg_id),.sel(Jmp),.out(in_pc));
 
 	pc PC(.clk(clk),.rst(rst),.in(in_pc),.out(out_pc));
@@ -126,7 +126,7 @@ module mips(
 					// .func(func),
 					// .opcode(opcode));
 
-	assign jmp_addr_id = instruction_id[25:0]; 
+	// assign jmp_addr_id = instruction_id[25:0]; 
 	assign and_z_b = (zero_ID & Branch) | (~(zero_ID) & not_equal_Branch);
 	assign final_flush = flush_ctrl | and_z_b;
 
@@ -172,11 +172,11 @@ module mips(
 		.AluOp_in(AluOperation_id),
 		.AluSrcIn(AluSrc_id),
 		.AluSrc1In(AluSrc1_id),
-		
+		.RegwriteIn(Regwrite_id),
         // *** FIXED: Added shamnt (Shift Amount) connections
         .shamnt_in(instruction_id[10:6]), 
         .shamnt_out(shamnt),
-
+		.RegwriteOut(Regwrite_exe),
 		// add signals for mem stage from exe stage and controller
 		.MemWriteIn(MemWrite_id), 
         .MemReadIn(MemRead_id), // *** FIXED: Was missing
@@ -232,6 +232,7 @@ module mips(
 	.AluResIn(alu_result_exe),
 	.DatacIn(DataC_exe),
 	.pc_in(pc_exe),
+	.RegwriteIn(Regwrite_exe), 
 	// add signals for wb stage from mem stage and controller
 	.write_reg_out(write_reg_mem),
 	.pc_out(pc_mem),
@@ -240,6 +241,7 @@ module mips(
 	.AluResOut(alu_result_mem),
 	.MemtoRegOut(MemtoReg_mem), 
 	.DatacOut(DataC_mem),
+	.RegwriteOut(Regwrite_mem), 
 	.WriteDataOut(write_data_mem)
 	);
 	
@@ -266,12 +268,14 @@ module mips(
 		.pc_in(pc_mem),
 		.DatacIn(DataC_mem),
 		.read_data_In(read_data_mem_mem),
+		.RegwriteIn(Regwrite_mem), 
 		// add signals for wb stage from mem stage and controller
 		.write_reg_out(write_reg_wb),
 		.pc_out(pc_wb),
 		.AluResOut(alu_result_wb),
 		.MemtoRegOut(MemtoReg_wb), 
 		.DatacOut(DataC_wb),
+		.RegwriteOut(Regwrite_wb), 
 		.read_data_out(read_data_mem_wb)
 	);
 

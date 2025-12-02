@@ -17,7 +17,7 @@ module ID2EXE(
     input       [3:0]       AluOp_in,            
     input                   AluSrcIn,
     input                   AluSrc1In,
-    
+    input                   RegwriteIn,
 
     input       [4:0]       shamnt_in,           
 
@@ -36,7 +36,7 @@ module ID2EXE(
     output reg  [1:0]       RegDstOut,
     output reg  [4:0]       reg1_out,            
     output reg  [4:0]       reg2_out,            
-    
+    output reg              RegwriteOut,
 
     output reg  [4:0]       shamnt_out,          
 
@@ -59,7 +59,7 @@ module ID2EXE(
             RegDstOut           <= 2'b00;
             reg1_out            <= 5'b0;
             reg2_out            <= 5'b0;
-            
+            RegwriteOut         <= 1'b0;
 
             shamnt_out          <= 5'b0; 
 
@@ -80,7 +80,7 @@ module ID2EXE(
             reg1_out            <= reg1_in;
             reg2_out            <= reg2_in;
             
-
+            RegwriteOut         <= RegwriteIn;
             shamnt_out          <= shamnt_in; 
 
             MemWriteOut         <= MemWriteIn;

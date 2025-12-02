@@ -10,33 +10,32 @@ z2
 cModel Technology
 Z0 dC:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline
 T_opt
-!s110 1764616940
-V3_8mWKc`n1J7DoIA>YEl51
+!s110 1764704865
+VBGnHJ4:RS>53SbTkn27I00
 04 2 4 work tb fast 0
-=11-6c2f805537e1-692deaec-257-4d44
+=4-6c2f805537e1-692f4261-16d-87ec
 o-quiet -auto_acc_if_foreign -work work +acc
 Z1 tCvgOpt 0
 n@_opt
 OL;O;2020.4;71
-R0
 vadder
-Z2 !s110 1764616933
+Z2 !s110 1764704855
 !i10b 1
 !s100 QeTV:0S[gizbbf`W7oCHC2
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
 IL=Ub6n0dbNNd3IJJ`GZXZ1
 R0
-Z4 w1764609118
+Z4 w1764699793
 Z5 8C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/ELMNTS1.v
 Z6 FC:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/ELMNTS1.v
-!i122 83
+!i122 125
 L0 141 5
 Z7 VDg1SIo80bB@j0V0VzS_@n1
 Z8 OL;L;2020.4;71
 r1
 !s85 0
 31
-Z9 !s108 1764616933.000000
+Z9 !s108 1764704855.000000
 Z10 !s107 C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/ELMNTS1.v|
 Z11 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/ELMNTS1.v|
 !i113 0
@@ -52,7 +51,7 @@ R0
 R4
 R5
 R6
-!i122 83
+!i122 125
 L0 76 63
 R7
 R8
@@ -68,15 +67,15 @@ R1
 vcontroller
 R2
 !i10b 1
-!s100 i?86P1O=V_b1C07PLG0bE0
+!s100 5lPYzb<oEf>F535HaFHOc3
 R3
-Il7EC5@CPI3z9FMK6d;;cf0
+ILQ>1beO_;TlX9j]ZkCIn;1
 R0
-w1764616433
+R4
 8C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/cntrlr.v
 FC:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/cntrlr.v
-!i122 82
-L0 16 161
+!i122 124
+L0 18 161
 R7
 R8
 r1
@@ -98,7 +97,7 @@ R0
 R4
 R5
 R6
-!i122 83
+!i122 125
 L0 173 35
 R7
 R8
@@ -114,15 +113,15 @@ R1
 vEXE2MEM
 R2
 !i10b 1
-!s100 LM4aKn4]m7:gk]h`H>d281
+!s100 ngJ3V=ndbIQAa:;>GZ<RX2
 R3
-I;S:l:G82l>c?zOAX`ShMI3
+I[73]kcOVUz^M3nNHgeSP72
 R0
-w1764582176
+w1764703476
 8C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/EXE2MEM.v
 FC:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/EXE2MEM.v
-!i122 84
-L0 3 51
+!i122 126
+L0 3 54
 R7
 R8
 r1
@@ -145,7 +144,7 @@ R0
 w1764603010
 8C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/EXEstage.v
 FC:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/EXEstage.v
-!i122 85
+!i122 127
 L0 27 52
 R7
 R8
@@ -160,16 +159,16 @@ R12
 R1
 n@e@x@estage
 vID2EXE
-R2
+Z13 !s110 1764704856
 !i10b 1
-!s100 WdoJX8;@Z]`XhAV]gS6Wn0
+!s100 Z:1adLaV<KV91z_dlh:DS0
 R3
-IN<mEi[FC?m;cH^lJ5NC282
+IY5E1zUHB8V=Wi=S:mAnGE3
 R0
-w1764611037
+w1764703316
 8C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/ID2EXE.v
 FC:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/ID2EXE.v
-!i122 86
+!i122 128
 L0 5 91
 R7
 R8
@@ -184,23 +183,23 @@ R12
 R1
 n@i@d2@e@x@e
 vIDstage
-R2
+R13
 !i10b 1
-!s100 1m8Bi@7EMAU55b:iW4A4a0
+!s100 DN3zTIW[3Ai:=EFnA^HY>1
 R3
-IO;0MV;0kgFdU>hQ__:fcF2
+I>M`@U7G6UcB23_cmGUK<;0
 R0
-w1764610342
+w1764669595
 8C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/IDstage.v
 FC:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/IDstage.v
-!i122 87
+!i122 129
 L0 1 36
 R7
 R8
 r1
 !s85 0
 31
-R9
+Z14 !s108 1764704856.000000
 !s107 C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/IDstage.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/IDstage.v|
 !i113 0
@@ -208,7 +207,7 @@ R12
 R1
 n@i@dstage
 vIF2ID
-R2
+R13
 !i10b 1
 !s100 HCH6ZX>V9CA2`]]DfX8<23
 R3
@@ -217,14 +216,14 @@ R0
 w1764591401
 8C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/IF2ID.v
 FC:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/IF2ID.v
-!i122 88
+!i122 130
 L0 3 34
 R7
 R8
 r1
 !s85 0
 31
-R9
+R14
 !s107 C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/IF2ID.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/IF2ID.v|
 !i113 0
@@ -232,23 +231,23 @@ R12
 R1
 n@i@f2@i@d
 vIFstage
-!s110 1764621235
+R13
 !i10b 1
-!s100 XKLiL2Ibc^N>QJChXccj@1
+!s100 z<YamNBa1RS[YLQFLP?TI0
 R3
-IgAH1JigleA7^75lC6[Yze0
+IN:nNcMSf1CClaFfHJbmLE0
 R0
-w1764603069
+w1764662397
 8C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/IFstage.v
 FC:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/IFstage.v
-!i122 97
+!i122 131
 L0 3 30
 R7
 R8
 r1
 !s85 0
 31
-!s108 1764621235.000000
+R14
 !s107 C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/IFstage.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/IFstage.v|
 !i113 0
@@ -265,7 +264,7 @@ R0
 R4
 R5
 R6
-!i122 83
+!i122 125
 L0 165 7
 R7
 R8
@@ -279,23 +278,23 @@ R11
 R12
 R1
 vMEM2WB
-Z13 !s110 1764616934
+R13
 !i10b 1
-!s100 2=na?oZdR[[[oT@EcWZ[Y0
+!s100 <2nC?U6L0=7nJ<BNFV:[81
 R3
-IhI`e]Mb8ZC5;RLQCfA5SJ0
+I]l?ZS]aRJ685of2:W?lfn0
 R0
-w1764582235
+w1764703529
 8C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/MEM2WB.v
 FC:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/MEM2WB.v
-!i122 90
-L0 3 39
+!i122 132
+L0 3 45
 R7
 R8
 r1
 !s85 0
 31
-Z14 !s108 1764616934.000000
+R14
 !s107 C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/MEM2WB.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/MEM2WB.v|
 !i113 0
@@ -305,15 +304,15 @@ n@m@e@m2@w@b
 vMEMstage
 R13
 !i10b 1
-!s100 ^@8THDNF0I]2IhOIERZb;3
+!s100 XD4fG]@>a]Z:h`e4hh>UN2
 R3
-IdlR3M3V0h8M3eVa:ab6@>3
+IJ^l05mS1X0dn>ogoL`=7m0
 R0
-w1764540702
+w1764662159
 8C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/MEMstage.v
 FC:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/MEMstage.v
-!i122 91
-L0 1 16
+!i122 133
+Z15 L0 1 18
 R7
 R8
 r1
@@ -329,15 +328,15 @@ n@m@e@mstage
 vmips
 R13
 !i10b 1
-!s100 >kEfCNBi92P;gAHD^WYi01
+!s100 Ic:1B^6W:Ql>Q=`81la^42
 R3
-I`DSU8WX9BEnOXY5k<nocI1
+ImMdiSgPeFKoR7G93b^G]02
 R0
-w1764616334
+w1764704750
 8C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/mips_pipeline.v
 FC:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/mips_pipeline.v
-!i122 92
-L0 3 278
+!i122 134
+L0 3 292
 R7
 R8
 r1
@@ -359,7 +358,7 @@ R0
 R4
 R5
 R6
-!i122 83
+!i122 125
 L0 32 9
 R7
 R8
@@ -382,7 +381,7 @@ R0
 R4
 R5
 R6
-!i122 83
+!i122 125
 L0 8 17
 R7
 R8
@@ -405,7 +404,7 @@ R0
 R4
 R5
 R6
-!i122 83
+!i122 125
 L0 209 6
 R7
 R8
@@ -421,14 +420,14 @@ R1
 vreg_file
 R2
 !i10b 1
-!s100 XF>F4Jal`SOI1aSXjzFHz2
+!s100 X@iXC^5d3;oBX8O=@1i3`3
 R3
-IG@i:dA>eg<a8FGGU0:dJ:2
+IASf:5DBe:nB=hA<D9m3M]1
 R0
 R4
 R5
 R6
-!i122 83
+!i122 125
 L0 148 16
 R7
 R8
@@ -451,7 +450,7 @@ R0
 R4
 R5
 R6
-!i122 83
+!i122 125
 L0 48 4
 R7
 R8
@@ -474,7 +473,7 @@ R0
 R4
 R5
 R6
-!i122 83
+!i122 125
 L0 43 4
 R7
 R8
@@ -497,7 +496,7 @@ R0
 w1764602490
 8C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/Tb.v
 FC:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/Tb.v
-!i122 93
+!i122 135
 L0 2 18
 R7
 R8
@@ -513,15 +512,15 @@ R1
 vWBstage
 R13
 !i10b 1
-!s100 A9[?oH=L<4d0BlE^4_@l=0
+!s100 _0WlQZ0TGQfWhze7f9nD[3
 R3
-Iz3VeC:9?j]]VWI=`OCJia1
+I<3VBI?c]C2AkkPW6R>l=S3
 R0
-w1764603732
+w1764662429
 8C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/WBstage.v
 FC:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/WBstage.v
-!i122 94
-L0 1 18
+!i122 136
+R15
 R7
 R8
 r1

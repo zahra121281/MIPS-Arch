@@ -1,32 +1,32 @@
-C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/IDstage.v {1 {vlog -work work -vopt -stats=none {C:\Users\mardin\Documents\AD_CA\CA1\MIPS-Arch\mips_pipeline\IDstage.v}
+C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/IDstage.v {1 {vlog -work work -vopt -stats=none C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/IDstage.v
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 -- Compiling module IDstage
 
 Top level modules:
 	IDstage
 
-} {} {}} C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/MEM2WB.v {1 {vlog -work work -vopt -stats=none {C:\Users\mardin\Documents\AD_CA\CA1\MIPS-Arch\mips_pipeline\MEM2WB.v}
+} {} {}} C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/MEM2WB.v {1 {vlog -work work -vopt -stats=none C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/MEM2WB.v
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 -- Compiling module MEM2WB
 
 Top level modules:
 	MEM2WB
 
-} {} {}} C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/IFstage.v {1 {vlog -work work -vopt -stats=none {C:\Users\mardin\Documents\AD_CA\CA1\MIPS-Arch\mips_pipeline\IFstage.v}
-Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
--- Compiling module IFstage
-
-Top level modules:
-	IFstage
-
-} {} {}} C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/EXE2MEM.v {1 {vlog -work work -vopt -stats=none {C:\Users\mardin\Documents\AD_CA\CA1\MIPS-Arch\mips_pipeline\EXE2MEM.v}
+} {} {}} C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/EXE2MEM.v {1 {vlog -work work -vopt -stats=none C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/EXE2MEM.v
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 -- Compiling module EXE2MEM
 
 Top level modules:
 	EXE2MEM
 
-} {} {}} C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/ELMNTS1.v {1 {vlog -work work -vopt -stats=none {C:\Users\mardin\Documents\AD_CA\CA1\MIPS-Arch\mips_pipeline\ELMNTS1.v}
+} {} {}} C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/IFstage.v {1 {vlog -work work -vopt -stats=none C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/IFstage.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module IFstage
+
+Top level modules:
+	IFstage
+
+} {} {}} C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/ELMNTS1.v {1 {vlog -work work -vopt -stats=none C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/ELMNTS1.v
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 -- Compiling module mux3_to_1
 -- Compiling module mux2_to_1
@@ -51,66 +51,59 @@ Top level modules:
 	data_memory
 	pc
 
-} {} {}} C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/mips_pipeline.v {1 {vlog -work work -vopt -stats=none {C:\Users\mardin\Documents\AD_CA\CA1\MIPS-Arch\mips_pipeline\mips_pipeline.v}
-Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
--- Compiling module mips
-
-Top level modules:
-	mips
-
-} {} {}} C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/Tb.v {1 {vlog -work work -vopt -stats=none {C:\Users\mardin\Documents\AD_CA\CA1\MIPS-Arch\mips_pipeline\Tb.v}
+} {} {}} C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/Tb.v {1 {vlog -work work -vopt -stats=none C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/Tb.v
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 -- Compiling module tb
 
 Top level modules:
 	tb
 
-} {} {}} C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/datapath.v {1 {vlog -work work -vopt -stats=none {C:\Users\mardin\Documents\AD_CA\CA1\MIPS-Arch\mips_pipeline\datapath.v}
+} {} {}} C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/datapath.v {1 {vlog -work work -vopt -stats=none C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/datapath.v
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 
-} {} {}} C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/ID2EXE.v {1 {vlog -work work -vopt -stats=none {C:\Users\mardin\Documents\AD_CA\CA1\MIPS-Arch\mips_pipeline\ID2EXE.v}
+} {} {}} C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/ID2EXE.v {1 {vlog -work work -vopt -stats=none C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/ID2EXE.v
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 -- Compiling module ID2EXE
 
 Top level modules:
 	ID2EXE
 
-} {} {}} C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/MEMstage.v {1 {vlog -work work -vopt -stats=none {C:\Users\mardin\Documents\AD_CA\CA1\MIPS-Arch\mips_pipeline\MEMstage.v}
+} {} {}} C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/MEMstage.v {1 {vlog -work work -vopt -stats=none C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/MEMstage.v
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 -- Compiling module MEMstage
 
 Top level modules:
 	MEMstage
 
-} {} {}} C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/cntrlr.v {1 {vlog -work work -vopt -stats=none {C:\Users\mardin\Documents\AD_CA\CA1\MIPS-Arch\mips_pipeline\cntrlr.v}
+} {} {}} C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/cntrlr.v {1 {vlog -work work -vopt -stats=none C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/cntrlr.v
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 -- Compiling module controller
 
 Top level modules:
 	controller
 
-} {} {}} C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/WBstage.v {1 {vlog -work work -vopt -stats=none {C:\Users\mardin\Documents\AD_CA\CA1\MIPS-Arch\mips_pipeline\WBstage.v}
+} {} {}} C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/register.v {1 {vlog -work work -vopt -stats=none C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/register.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+
+} {} {}} C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/WBstage.v {1 {vlog -work work -vopt -stats=none C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/WBstage.v
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 -- Compiling module WBstage
 
 Top level modules:
 	WBstage
 
-} {} {}} C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/register.v {1 {vlog -work work -vopt -stats=none {C:\Users\mardin\Documents\AD_CA\CA1\MIPS-Arch\mips_pipeline\register.v}
-Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-
-} {} {}} C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/EXEstage.v {1 {vlog -work work -vopt -stats=none {C:\Users\mardin\Documents\AD_CA\CA1\MIPS-Arch\mips_pipeline\EXEstage.v}
-Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
--- Compiling module EXEstage
-
-Top level modules:
-	EXEstage
-
-} {} {}} C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/IF2ID.v {1 {vlog -work work -vopt -stats=none {C:\Users\mardin\Documents\AD_CA\CA1\MIPS-Arch\mips_pipeline\IF2ID.v}
+} {} {}} C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/IF2ID.v {1 {vlog -work work -vopt -stats=none C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/IF2ID.v
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 -- Compiling module IF2ID
 
 Top level modules:
 	IF2ID
+
+} {} {}} C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/EXEstage.v {1 {vlog -work work -vopt -stats=none C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/mips_pipeline/EXEstage.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module EXEstage
+
+Top level modules:
+	EXEstage
 
 } {} {}}

@@ -11,14 +11,15 @@ module MEM2WB(
     input       [31:0]  read_data_In,
     input       [31:0]  pc_in,             // pc_mem
     input               DatacIn,           // DataC_mem
-
+    input               RegwriteIn,
     // ---------------- TO WB STAGE -------------------
     output reg  [4:0]   write_reg_out,     // write_reg_wb
     output reg  [31:0]  pc_out,            // pc_wb
     output reg  [31:0]  AluResOut,         // alu_result_wb
     output reg          MemtoRegOut,       // MemtoReg_wb
     output reg          DatacOut ,          // DataC_wb
-    output reg   [31:0] read_data_out
+    output reg   [31:0] read_data_out,
+    output reg          RegwriteOut
 );
 
     //======================================================
@@ -39,6 +40,7 @@ module MEM2WB(
             MemtoRegOut     <= MemtoRegIn;
             DatacOut        <= DatacIn;
             read_data_out   <= read_data_In; 
+            RegwriteOut     <= RegwriteIn;
         end
     end
 
