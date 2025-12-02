@@ -155,7 +155,7 @@ module reg_file(input clk,rst,RegWrite,input [4:0] read_reg1,read_reg2,write_reg
 			for(i=0;i<32;i=i+1) register[i]<=32'b0;
 		end
 		else begin
-			if(RegWrite) register[write_reg]<=write_data;
+			if(RegWrite && write_reg != 5'd0) register[write_reg]<=write_data;
 		end
 	end
 	assign read_data1=register[read_reg1];
