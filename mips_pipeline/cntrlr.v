@@ -98,7 +98,6 @@ module controller(
 					end
 
 					default: Regwrite = 1'b0;
-
 					// `jr: begin
 					// 	Jmp=2'b10;
 					//  end

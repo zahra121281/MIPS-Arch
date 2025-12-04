@@ -157,6 +157,9 @@ module reg_file(input clk,rst,RegWrite,input [4:0] read_reg1,read_reg2,write_reg
 		else begin
 			if(RegWrite && write_reg != 5'd0) register[write_reg]<=write_data;
 		end
+
+        $display("CLK=%0t | rr1=%0d rr2=%0d | rd1=%h rd2=%h | wr=%d wd=%0d rw=%0d",
+              $time, read_reg1, read_reg2, read_data1, read_data2, write_reg, write_data, RegWrite);
 	end
 	assign read_data1=register[read_reg1];
 	assign read_data2=register[read_reg2];
