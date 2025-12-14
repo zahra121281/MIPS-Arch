@@ -171,6 +171,12 @@ module inst_memory(input rst,input [31:0]adr,output [31:0]instruction) ;
 		$readmemb("instructionmemory.txt",mem_inst);
   	end
 	assign instruction=mem_inst[adr>>2];
+
+    always @(adr) begin
+        #1;
+        $display("[FETCH] Time=%0t | PC=%0d | Instruction Hex=%h", $time, adr, instruction);
+    end
+
 endmodule
 
 module data_memory(input clk,rst,mem_read,mem_write,input [31:0]adr,write_data,output reg[31:0]read_data,
@@ -184,11 +190,17 @@ module data_memory(input clk,rst,mem_read,mem_write,input [31:0]adr,write_data,o
   	end
 
 	always@(posedge clk) begin
-		if(mem_write) mem_data[adr>>2]<=write_data;
+		if(mem_write) begin
+             mem_data[adr>>2]<=write_data;
+            $display("[MEM WRITE] Time=%0t | Address=%0d (Index %0d) | Data=%0d", $time, adr, adr>>2, write_data);
+            end
 	end
 
 	always@(mem_read,adr) begin
-		if(mem_read) read_data<=mem_data[adr>>2];
+		if(mem_read) begin
+            read_data<=mem_data[adr>>2];
+            $display("[MEM READ] Time=%0t | Address=%0d | DataHex=%h", $time, adr, mem_data[adr>>2]);
+        end
 		else read_data<=32'b0;	
 	end
 	

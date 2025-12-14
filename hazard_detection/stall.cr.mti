@@ -1,0 +1,128 @@
+{D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/ID2EXE.v} {1 {vlog -work work -vopt -stats=none {D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/ID2EXE.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module ID2EXE
+
+Top level modules:
+	ID2EXE
+
+} {} {}} {D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/IDstage.v} {1 {vlog -work work -vopt -stats=none {D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/IDstage.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module IDstage
+
+Top level modules:
+	IDstage
+
+} {} {}} {D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/HazardUnit.v} {1 {vlog -work work -vopt -stats=none {D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/HazardUnit.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module HazardUnit
+
+Top level modules:
+	HazardUnit
+
+} {} {}} {D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/MEMstage.v} {1 {vlog -work work -vopt -stats=none {D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/MEMstage.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module MEMstage
+
+Top level modules:
+	MEMstage
+
+} {} {}} {D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/EXE2MEM.v} {1 {vlog -work work -vopt -stats=none {D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/EXE2MEM.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module EXE2MEM
+
+Top level modules:
+	EXE2MEM
+
+} {} {}} {D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/ForwardingUnit.v} {1 {vlog -work work -vopt -stats=none {D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/ForwardingUnit.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module ForwardingUnit
+
+Top level modules:
+	ForwardingUnit
+
+} {} {}} {D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/IFstage.v} {1 {vlog -work work -vopt -stats=none {D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/IFstage.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module IFstage
+
+Top level modules:
+	IFstage
+
+} {} {}} {D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/ELMNTS1.v} {1 {vlog -work work -vopt -stats=none {D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/ELMNTS1.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module mux3_to_1
+-- Compiling module mux2_to_1
+-- Compiling module sign_extension
+-- Compiling module shl2
+-- Compiling module alu
+-- Compiling module adder
+-- Compiling module reg_file
+-- Compiling module inst_memory
+-- Compiling module data_memory
+
+Top level modules:
+	mux3_to_1
+	mux2_to_1
+	sign_extension
+	shl2
+	alu
+	adder
+	reg_file
+	inst_memory
+	data_memory
+
+} {} {}} {D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/register.v} {1 {vlog -work work -vopt -stats=none {D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/register.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+
+} {} {}} {D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/cntrlr.v} {1 {vlog -work work -vopt -stats=none {D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/cntrlr.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module controller
+
+Top level modules:
+	controller
+
+} {} {}} {D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/mips_pipeline.v} {1 {vlog -work work -vopt -stats=none {D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/mips_pipeline.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module mips
+
+Top level modules:
+	mips
+
+} {} {}} {D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/EXEstage.v} {1 {vlog -work work -vopt -stats=none {D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/EXEstage.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module EXEstage
+
+Top level modules:
+	EXEstage
+
+} {} {}} {D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/MEM2WB.v} {1 {vlog -work work -vopt -stats=none {D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/MEM2WB.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module MEM2WB
+
+Top level modules:
+	MEM2WB
+
+} {} {}} {D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/pc.v} {1 {vlog -work work -vopt -stats=none {D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/pc.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module pc
+
+Top level modules:
+	pc
+
+} {} {}} {D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/WBstage.v} {1 {vlog -work work -vopt -stats=none {D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/WBstage.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module WBstage
+
+Top level modules:
+	WBstage
+
+} {} {}} {D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/IF2ID.v} {1 {vlog -work work -vopt -stats=none {D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/IF2ID.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module IF2ID
+
+Top level modules:
+	IF2ID
+
+} {} {}} {D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/datapath.v} {1 {vlog -work work -vopt -stats=none {D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/datapath.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+
+} {} {}}

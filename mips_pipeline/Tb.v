@@ -13,7 +13,7 @@ initial begin
     clk = 1'b0;
 	rst = 1'b1;
     #15 rst = 1'b0;
-	#3000 $stop;
+	#3000000 $stop;
 end
     
 endmodule
