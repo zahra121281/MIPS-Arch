@@ -1,0 +1,75 @@
+addi $17, $0, 50            # addi $s1, $zero, 50
+add  $16, $0, $0            # add  $s0, $zero, $zero
+addi $18, $0, 0             # addi $s2, $zero, 0
+addi $12, $17, -1           # addi $t4, $s1, -1
+
+outer_loop:
+    nop
+    nop                     # (1) Delay to read $18 and $12
+    slt  $13, $18, $12      # slt  $t5, $s2, $t4
+    nop
+    nop                     # (2) Delay to read $13
+    beq  $13, $0, end_prog  # beq  $t5, $zero, end_prog
+    nop                     # Branch Delay Slot
+
+    addi $19, $0, 0         # addi $s3, $zero, 0
+    sub  $12, $17, $18      # sub  $t4, $s1, $s2
+    nop
+    nop                     # (3) Delay for $12
+    addi $12, $12, -1       # addi $t4, $t4, -1
+
+inner_loop:
+    nop
+    nop                     # (4) Delay for $12 and $19
+    slt  $13, $19, $12      # slt  $t5, $s3, $t4
+    nop
+    nop                     # (5) Delay for $13
+    beq  $13, $0, end_inner
+    nop                     # Branch Delay Slot
+
+    sll  $10, $19, 2        # sll  $t2, $s3, 2
+    nop
+    nop                     # (6) Delay for $10
+    add  $10, $16, $10      # add  $t2, $s0, $t2
+
+    addi $11, $19, 1        # addi $t3, $s3, 1
+    nop
+    nop                     # (7) Delay for $11
+    sll  $11, $11, 2        # sll  $t3, $t3, 2
+    nop
+    nop                     # (8) Delay for $11
+    add  $11, $16, $11      # add  $t3, $s0, $t3
+    nop
+    nop                     # (9) Delay for addresses
+
+    lw   $8, 0($10)         # lw   $t0, 0($t2)
+    lw   $9, 0($11)         # lw   $t1, 0($t3)
+    nop
+    nop                     # (10) Critical delay for loads
+
+    slt  $13, $9, $8        # slt  $t5, $t1, $t0
+    nop
+    nop                     # (11) Delay for $13
+    beq  $13, $0, no_swap
+    nop                     # Branch Delay Slot
+
+    sw   $9, 0($10)         # sw   $t1, 0($t2)
+    sw   $8, 0($11)         # sw   $t0, 0($t3)
+
+no_swap:
+    addi $19, $19, 1        # addi $s3, $s3, 1
+    nop
+    nop                     # (12) Delay before jumping back
+    j    inner_loop
+    nop                     # Jump Delay Slot
+
+end_inner:
+    addi $18, $18, 1        # addi $s2, $s2, 1
+    nop
+    nop                     # (13) Delay before jumping back
+    j    outer_loop
+    nop                     # Jump Delay Slot
+
+end_prog:
+    j    end_prog
+    nop
