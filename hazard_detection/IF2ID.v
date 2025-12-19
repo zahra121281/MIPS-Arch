@@ -10,7 +10,7 @@ module IF2ID(
     output reg [31:0] PCplus4OUt,
     output reg [31:0] instructionOut
     );
-
+/*
   always @ (posedge clk) begin
    
     if (rst) begin
@@ -28,5 +28,25 @@ module IF2ID(
       instructionOut <= instructionIn;
     end
   end
+  */
+
+  always @ (posedge clk) begin
+    if (rst) begin
+        PCplus4OUt <= 0;
+        instructionOut <= 0;
+    end
+    else if (!EN) begin // اولویت اول: اگر استال بود، هیچ کاری نکن (Freeze)
+        PCplus4OUt <= PCplus4OUt;
+        instructionOut <= instructionOut;
+    end
+    else if (flush) begin // اولویت دوم: اگر استال نبود و فلش بود، پاک کن
+        PCplus4OUt <= 0;
+        instructionOut <= 0;
+    end
+    else begin // حالت عادی
+        PCplus4OUt <= PCplus4In;
+        instructionOut <= instructionIn;
+    end
+end
 
 endmodule

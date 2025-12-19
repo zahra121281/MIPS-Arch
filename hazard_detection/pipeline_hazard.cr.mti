@@ -1,4 +1,27 @@
-C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/ForwardU_branch.v {1 {vlog -work work -vopt -stats=none C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/ForwardU_branch.v
+ELMNTS1.v {1 {vlog -work work -vopt -stats=none {D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/2-2/MIPS-Arch/hazard_detection/ELMNTS1.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module mux3_to_1
+-- Compiling module mux2_to_1
+-- Compiling module sign_extension
+-- Compiling module shl2
+-- Compiling module alu
+-- Compiling module adder
+-- Compiling module reg_file
+-- Compiling module inst_memory
+-- Compiling module data_memory
+
+Top level modules:
+	mux3_to_1
+	mux2_to_1
+	sign_extension
+	shl2
+	alu
+	adder
+	reg_file
+	inst_memory
+	data_memory
+
+} {} {}} C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/ForwardU_branch.v {1 {vlog -work work -vopt -stats=none C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/ForwardU_branch.v
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 -- Compiling module ForwardU_br
 
@@ -8,12 +31,36 @@ Top level modules:
 } {} {}} C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/datapath.v {1 {vlog -work work -vopt -stats=none C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/datapath.v
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 
+} {} {}} register.v {1 {vlog -work work -vopt -stats=none {D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/2-2/MIPS-Arch/hazard_detection/register.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+
+} {} {}} cntrlr.v {1 {vlog -work work -vopt -stats=none {D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/2-2/MIPS-Arch/hazard_detection/cntrlr.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module controller
+
+Top level modules:
+	controller
+
+} {} {}} EXEstage.v {1 {vlog -work work -vopt -stats=none {D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/2-2/MIPS-Arch/hazard_detection/EXEstage.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module EXEstage
+
+Top level modules:
+	EXEstage
+
 } {} {}} C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/ID2EXE.v {1 {vlog -work work -vopt -stats=none C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/ID2EXE.v
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 -- Compiling module ID2EXE
 
 Top level modules:
 	ID2EXE
+
+} {} {}} ForwardU_branch.v {1 {vlog -work work -vopt -stats=none {D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/2-2/MIPS-Arch/hazard_detection/ForwardU_branch.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module ForwardU_br
+
+Top level modules:
+	ForwardU_br
 
 } {} {}} C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/HazardUnit.v {1 {vlog -work work -vopt -stats=none C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/HazardUnit.v
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
@@ -36,6 +83,13 @@ Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 Top level modules:
 	ForwardingUnit
 
+} {} {}} MEM2WB.v {1 {vlog -work work -vopt -stats=none {D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/2-2/MIPS-Arch/hazard_detection/MEM2WB.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module MEM2WB
+
+Top level modules:
+	MEM2WB
+
 } {} {}} C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/WBstage.v {1 {vlog -work work -vopt -stats=none C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/WBstage.v
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 -- Compiling module WBstage
@@ -53,6 +107,13 @@ Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 Top level modules:
 	controller
 
+} {} {}} pc.v {1 {vlog -work work -vopt -stats=none {D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/2-2/MIPS-Arch/hazard_detection/pc.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module pc
+
+Top level modules:
+	pc
+
 } {} {}} C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/EXEstage.v {1 {vlog -work work -vopt -stats=none C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/EXEstage.v
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 -- Compiling module EXEstage
@@ -67,12 +128,36 @@ Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 Top level modules:
 	IF2ID
 
+} {} {}} HazardU_branch.v {1 {vlog -work work -vopt -stats=none {D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/2-2/MIPS-Arch/hazard_detection/HazardU_branch.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module HazardU_br
+
+Top level modules:
+	HazardU_br
+
+} {} {}} WBstage.v {1 {vlog -work work -vopt -stats=none {D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/2-2/MIPS-Arch/hazard_detection/WBstage.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module WBstage
+
+Top level modules:
+	WBstage
+
+} {} {}} Tb.v {1 {vlog -work work -vopt -stats=none {D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/2-2/MIPS-Arch/hazard_detection/Tb.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module tb
+
+Top level modules:
+	tb
+
 } {} {}} C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/IDstage.v {1 {vlog -work work -vopt -stats=none C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/IDstage.v
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 -- Compiling module IDstage
 
 Top level modules:
 	IDstage
+
+} {} {}} datapath.v {1 {vlog -work work -vopt -stats=none {D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/2-2/MIPS-Arch/hazard_detection/datapath.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 
 } {} {}} C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/MEM2WB.v {1 {vlog -work work -vopt -stats=none C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/MEM2WB.v
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
@@ -81,13 +166,6 @@ Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 Top level modules:
 	MEM2WB
 
-} {} {}} C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/IFstage.v {1 {vlog -work work -vopt -stats=none C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/IFstage.v
-Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
--- Compiling module IFstage
-
-Top level modules:
-	IFstage
-
 } {} {}} C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/EXE2MEM.v {1 {vlog -work work -vopt -stats=none C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/EXE2MEM.v
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 -- Compiling module EXE2MEM
@@ -95,12 +173,26 @@ Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 Top level modules:
 	EXE2MEM
 
-} {} {}} C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/HazardU_branch.v {1 {vlog -work work -vopt -stats=none C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/HazardU_branch.v
+} {} {}} C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/IFstage.v {1 {vlog -work work -vopt -stats=none C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/IFstage.v
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
--- Compiling module HazardU_br
+-- Compiling module IFstage
 
 Top level modules:
-	HazardU_br
+	IFstage
+
+} {} {}} IDstage.v {1 {vlog -work work -vopt -stats=none {D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/2-2/MIPS-Arch/hazard_detection/IDstage.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module IDstage
+
+Top level modules:
+	IDstage
+
+} {} {}} ID2EXE.v {1 {vlog -work work -vopt -stats=none {D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/2-2/MIPS-Arch/hazard_detection/ID2EXE.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module ID2EXE
+
+Top level modules:
+	ID2EXE
 
 } {} {}} C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/ELMNTS1.v {1 {vlog -work work -vopt -stats=none C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/ELMNTS1.v
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
@@ -124,6 +216,48 @@ Top level modules:
 	reg_file
 	inst_memory
 	data_memory
+
+} {} {}} C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/HazardU_branch.v {1 {vlog -work work -vopt -stats=none C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/HazardU_branch.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module HazardU_br
+
+Top level modules:
+	HazardU_br
+
+} {} {}} HazardUnit.v {1 {vlog -work work -vopt -stats=none {D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/2-2/MIPS-Arch/hazard_detection/HazardUnit.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module HazardUnit
+
+Top level modules:
+	HazardUnit
+
+} {} {}} MEMstage.v {1 {vlog -work work -vopt -stats=none {D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/2-2/MIPS-Arch/hazard_detection/MEMstage.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module MEMstage
+
+Top level modules:
+	MEMstage
+
+} {} {}} IFstage.v {1 {vlog -work work -vopt -stats=none {D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/2-2/MIPS-Arch/hazard_detection/IFstage.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module IFstage
+
+Top level modules:
+	IFstage
+
+} {} {}} ForwardingUnit.v {1 {vlog -work work -vopt -stats=none {D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/2-2/MIPS-Arch/hazard_detection/ForwardingUnit.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module ForwardingUnit
+
+Top level modules:
+	ForwardingUnit
+
+} {} {}} EXE2MEM.v {1 {vlog -work work -vopt -stats=none {D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/2-2/MIPS-Arch/hazard_detection/EXE2MEM.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module EXE2MEM
+
+Top level modules:
+	EXE2MEM
 
 } {} {}} C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/mips_pipeline.v {1 {vlog -work work -vopt -stats=none C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/mips_pipeline.v
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020

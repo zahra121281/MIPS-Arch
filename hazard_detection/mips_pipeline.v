@@ -209,7 +209,7 @@ module mips(
 	ID2EXE id2exe(
 		.clk(clk),
 		.rst(rst),
-		.flush(Stall | PCSrc), // *** FIXED: Flush on Stall OR Branch Taken
+		.flush(Stall|stall_beq | PCSrc), // *** FIXED: Flush on Stall OR Branch Taken
 		
 		// Forwarding Inputs/Outputs
 		.RsIn(instruction_id[25:21]), .RtIn(instruction_id[20:16]),
