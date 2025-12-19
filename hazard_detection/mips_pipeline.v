@@ -117,7 +117,7 @@ module mips(
 	pc PC(
 		.clk(clk),
 		.rst(rst),
-		.en(Stall_n), // *** FIXED: Freeze PC on Stall
+		.en(Stall_n), 
 		.in(in_pc),
 		.out(out_pc)
 	);
@@ -136,8 +136,8 @@ module mips(
 	IF2ID IF2ID(
 		.clk(clk),
 		.rst(rst),
-		.EN(Stall_n),           // *** FIXED: Freeze IF/ID on Stall
-		.flush(PCSrc | (Jmp != 0)), // *** FIXED: Flush on Branch Taken or Jump
+		.EN(Stall_n),           
+		.flush(PCSrc | (Jmp != 0)), 
 		.PCplus4In(pc_if),
 		.instructionIn(instruction_if),
 		.PCplus4OUt(pc_id),
@@ -209,7 +209,7 @@ module mips(
 	ID2EXE id2exe(
 		.clk(clk),
 		.rst(rst),
-		.flush(Stall|stall_beq | PCSrc), // *** FIXED: Flush on Stall OR Branch Taken
+		.flush(Stall|stall_beq | PCSrc), 
 		
 		// Forwarding Inputs/Outputs
 		.RsIn(instruction_id[25:21]), .RtIn(instruction_id[20:16]),
@@ -282,7 +282,7 @@ module mips(
 		.zero_flag(zero_exe), 
 		.overflow(overflow_exe),
 		.alu_result(alu_result_exe),
-		.write_data_out(write_data_exe_final) // *** FIXED: Correct data for SW
+		.write_data_out(write_data_exe_final) 
 	); 
 
 	// --- EXE/MEM REG ---
@@ -290,7 +290,7 @@ module mips(
 		.clk(clk),
 		.rst(rst),
 		.write_reg_in(write_reg_exe),
-		.WriteDataIn(write_data_exe_final), // *** FIXED: Using forwarded data
+		.WriteDataIn(write_data_exe_final), 
 		.MemtoRegIn(MemtoReg_exe), 
 		.MemWriteIn(MemWrite_exe), 
 		.MemReadIn(MemRead_exe),

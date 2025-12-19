@@ -35,15 +35,15 @@ module IF2ID(
         PCplus4OUt <= 0;
         instructionOut <= 0;
     end
-    else if (!EN) begin // اولویت اول: اگر استال بود، هیچ کاری نکن (Freeze)
+    else if (!EN) begin 
         PCplus4OUt <= PCplus4OUt;
         instructionOut <= instructionOut;
     end
-    else if (flush) begin // اولویت دوم: اگر استال نبود و فلش بود، پاک کن
+    else if (flush) begin 
         PCplus4OUt <= 0;
         instructionOut <= 0;
     end
-    else begin // حالت عادی
+    else begin 
         PCplus4OUt <= PCplus4In;
         instructionOut <= instructionIn;
     end
