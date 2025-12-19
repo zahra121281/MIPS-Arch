@@ -6,14 +6,74 @@ module tb();
 	mips mips_processor(.clk(clk),.rst(rst),.out1(out1),.out2(out2));
 	
 	always begin
-		#5 clk = ~clk;
+		#6 clk = ~clk;
 	end
 
 initial begin
     clk = 1'b0;
 	rst = 1'b1;
     #15 rst = 1'b0;
-	#30000 $stop;
+	#3000000 $stop;
 end
     
 endmodule
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

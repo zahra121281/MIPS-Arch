@@ -14,912 +14,980 @@ T_opt
 VWz<ONKFllh8TbBM;>7ozF3
 Z1 04 2 4 work tb fast 0
 =23-6c2f805537e1-693148e1-3b2-75f8
-o-quiet -auto_acc_if_foreign -work work +acc
-Z2 tCvgOpt 0
+Z2 o-quiet -auto_acc_if_foreign -work work +acc
+Z3 tCvgOpt 0
 n@_opt
-Z3 OL;O;2020.4;71
+Z4 OL;O;2020.4;71
+R0
+T_opt1
+!s110 1766131575
+VnXH<BBgE>QdGSgWK3h5;63
+R1
+=24-6c2f805537e1-69450777-6e-d40
+R2
+R3
+n@_opt1
+R4
+T_opt2
+!s110 1765920882
+V0@Z`_NkEHFiRBfcg<Z`lH1
+R1
+=1-6c2f805537e1-6941d071-38f-382c
+R2
+R3
+n@_opt2
+R4
 R0
 vadder
-Z4 !s110 1765731541
+Z5 !s110 1766131563
 !i10b 1
 !s100 m9Dg8`S3mRL40=6BR9igR1
-Z5 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IKRizT`R<=3?klYUjWO0ZO1
-Z6 dD:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall
-Z7 w1765725924
-Z8 8D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/ELMNTS1.v
-Z9 FD:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/ELMNTS1.v
-!i122 837
+Z6 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IWNaJNCIb@OlG9d9b:L4N[0
+Z7 dC:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection
+Z8 w1765958548
+Z9 8C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/ELMNTS1.v
+Z10 FC:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/ELMNTS1.v
+!i122 1050
 L0 143 5
-Z10 VDg1SIo80bB@j0V0VzS_@n1
-Z11 OL;L;2020.4;71
+Z11 VDg1SIo80bB@j0V0VzS_@n1
+Z12 OL;L;2020.4;71
 r1
 !s85 0
 31
-Z12 !s108 1765731541.000000
-Z13 !s107 D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/ELMNTS1.v|
-Z14 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/ELMNTS1.v|
+Z13 !s108 1766131562.000000
+Z14 !s107 C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/ELMNTS1.v|
+Z15 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/ELMNTS1.v|
 !i113 0
-Z15 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-R2
+Z16 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R3
 valu
-R4
-!i10b 1
-!s100 d84F`4WZdj6ilgeV1zBbL2
 R5
-ITYh`Zj6?]gLT:[lcP0Zl22
+!i10b 1
+!s100 ?0FUERgkn6938HR6g5g;D0
 R6
+IYSdWz>V139?JcZJfXM]fB3
 R7
 R8
 R9
-!i122 837
-L0 77 64
 R10
+!i122 1050
+L0 77 64
 R11
+R12
 r1
 !s85 0
 31
-R12
 R13
 R14
-!i113 0
 R15
-R2
+!i113 0
+R16
+R3
 vcontroller
-R4
+!s110 1766131562
 !i10b 1
 !s100 =XBGJ@R7oSjjkG=B2YN;60
-R5
-IHjn;n;BMo3_?zEGhBi;K10
 R6
-Z16 w1765464421
-8D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/cntrlr.v
-FD:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/cntrlr.v
-!i122 836
+I_298oaC89=MISaOTi<;h52
+R7
+Z17 w1765905881
+8C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/cntrlr.v
+FC:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/cntrlr.v
+!i122 1049
 L0 18 160
-R10
 R11
+R12
 r1
 !s85 0
 31
-R12
-!s107 D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/cntrlr.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/cntrlr.v|
+R13
+!s107 C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/cntrlr.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/cntrlr.v|
 !i113 0
-R15
-R2
+R16
+R3
 vdata_memory
-R4
-!i10b 1
-!s100 @enaLPX`b<f@8QVZ@d9z=1
 R5
-I0I[]hzm^F7`c_FMjbI[_l1
+!i10b 1
+!s100 W1EimbQhd0IYMSRGi]6bb1
 R6
+I>Vg<R5Ua^1Jc=CVCE>IVI3
 R7
 R8
 R9
-!i122 837
-L0 189 46
 R10
+!i122 1050
+L0 188 45
 R11
+R12
 r1
 !s85 0
 31
-R12
 R13
 R14
-!i113 0
 R15
-R2
+!i113 0
+R16
+R3
 vEXE2MEM
-R4
+R5
 !i10b 1
 !s100 ngJ3V=ndbIQAa:;>GZ<RX2
-R5
-Ibh8j8Wz1<ZjmaA=nfH[MH1
 R6
-R16
-8D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/EXE2MEM.v
-FD:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/EXE2MEM.v
-!i122 838
+IhH0b7h:FfCoNOHL;4`aN11
+R7
+R17
+8C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/EXE2MEM.v
+FC:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/EXE2MEM.v
+!i122 1051
 L0 3 54
-R10
 R11
+R12
 r1
 !s85 0
 31
-R12
-!s107 D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/EXE2MEM.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/EXE2MEM.v|
+Z18 !s108 1766131563.000000
+!s107 C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/EXE2MEM.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/EXE2MEM.v|
 !i113 0
-R15
-R2
+R16
+R3
 n@e@x@e2@m@e@m
 vEXEstage
-R4
-!i10b 1
-!s100 fdDeI]Agh?bDiaaIH>gTF3
 R5
-I7lOXZ8AimHVBjmOVTN]8O2
+!i10b 1
+!s100 h=o4P9VCQC<R=Z908Ekbl1
 R6
-w1765634106
-8D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/EXEstage.v
-FD:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/EXEstage.v
-!i122 839
-L0 3 104
-R10
+IAfNH`P`LaBGKin[YDA:h[1
+R7
+w1766034546
+8C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/EXEstage.v
+FC:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/EXEstage.v
+!i122 1052
+L0 3 102
 R11
+R12
 r1
 !s85 0
 31
-R12
-!s107 D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/EXEstage.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/EXEstage.v|
+R18
+!s107 C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/EXEstage.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/EXEstage.v|
 !i113 0
-R15
-R2
+R16
+R3
 n@e@x@estage
 vForwardingUnit
-Z17 !s110 1765731542
+R5
 !i10b 1
 !s100 fN_X8J?P4GoJn@OLLB9b^0
-R5
-Izm?MiAooNI11;[ChZBILa3
 R6
-w1765632622
-8D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/ForwardingUnit.v
-FD:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/ForwardingUnit.v
-!i122 840
-L0 2 27
-R10
-R11
-r1
-!s85 0
-31
-R12
-!s107 D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/ForwardingUnit.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/ForwardingUnit.v|
-!i113 0
-R15
-R2
-n@forwarding@unit
-vHazardUnit
+Izc6I?BlCQ7KPa7S8inZ<a0
+R7
 R17
-!i10b 1
-!s100 [YNXfk;O8;E:k8?_K=BPl2
-R5
-IbU:8I98:I3@hSigjWLjgj0
-R6
-w1765632513
-8D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/HazardUnit.v
-FD:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/HazardUnit.v
-!i122 841
-L0 2 37
-R10
+8C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/ForwardingUnit.v
+FC:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/ForwardingUnit.v
+!i122 1053
+L0 2 27
 R11
+R12
 r1
 !s85 0
 31
-Z18 !s108 1765731542.000000
-!s107 D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/HazardUnit.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/HazardUnit.v|
+R18
+!s107 C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/ForwardingUnit.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/ForwardingUnit.v|
 !i113 0
-R15
-R2
+R16
+R3
+n@forwarding@unit
+vForwardU_br
+Z19 !s110 1766131564
+!i10b 1
+!s100 OWz_V>T1TE:KJ16SEhX3f2
+R6
+I]4QXX=U1F7lZENOIB1Soi2
+R7
+w1766034794
+8C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/ForwardU_branch.v
+FC:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/ForwardU_branch.v
+!i122 1065
+L0 3 22
+R11
+R12
+r1
+!s85 0
+31
+Z20 !s108 1766131564.000000
+!s107 C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/ForwardU_branch.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/ForwardU_branch.v|
+!i113 0
+R16
+R3
+n@forward@u_br
+vHazardU_br
+R19
+!i10b 1
+!s100 L2@oM4UIHKFSfkE0OHJ[g0
+R6
+IHMgU@1@FhHRJKoTaVG<MP1
+R7
+w1766097388
+8C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/HazardU_branch.v
+FC:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/HazardU_branch.v
+!i122 1066
+L0 4 26
+R11
+R12
+r1
+!s85 0
+31
+R20
+!s107 C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/HazardU_branch.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/HazardU_branch.v|
+!i113 0
+R16
+R3
+n@hazard@u_br
+vHazardUnit
+R5
+!i10b 1
+!s100 2zPJaXX1;R@flU2IDBnRg3
+R6
+I7]KPRb2c[NDU;Nn@>XYND0
+R7
+w1765908937
+8C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/HazardUnit.v
+FC:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/HazardUnit.v
+!i122 1054
+L0 2 36
+R11
+R12
+r1
+!s85 0
+31
+R18
+!s107 C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/HazardUnit.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/HazardUnit.v|
+!i113 0
+R16
+R3
 n@hazard@unit
 vID2EXE
-R17
+R5
 !i10b 1
 !s100 nM_8GP3PNX:o6g`i6V12F0
-R5
-I1FS3KaJi4D]_NT^T43I7G0
 R6
-w1765633038
-8D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/ID2EXE.v
-FD:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/ID2EXE.v
-!i122 842
+IbDX9if>oh2PTO7WSRm`PA3
+R7
+R17
+8C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/ID2EXE.v
+FC:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/ID2EXE.v
+!i122 1055
 L0 4 105
-R10
 R11
+R12
 r1
 !s85 0
 31
 R18
-!s107 D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/ID2EXE.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/ID2EXE.v|
+!s107 C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/ID2EXE.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/ID2EXE.v|
 !i113 0
-R15
-R2
+R16
+R3
 n@i@d2@e@x@e
 vIDstage
-R17
-!i10b 1
-!s100 O9ZmdA=P@gjjF>RQ0_D9=2
 R5
-IB6:Z7SO2d_TT[>CS_DWXX3
+!i10b 1
+!s100 9cjBZ2c57cD@eNU^C]9Q<2
 R6
-R16
-8D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/IDstage.v
-FD:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/IDstage.v
-!i122 843
-L0 1 40
-R10
+ISj;G2eDJG`UzFUJCa=I352
+R7
+w1766035329
+8C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/IDstage.v
+FC:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/IDstage.v
+!i122 1056
+L0 1 45
 R11
+R12
 r1
 !s85 0
 31
 R18
-!s107 D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/IDstage.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/IDstage.v|
+!s107 C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/IDstage.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/IDstage.v|
 !i113 0
-R15
-R2
+R16
+R3
 n@i@dstage
 vIF2ID
-R17
+R5
 !i10b 1
 !s100 `mHWEg?=:McgG4CDLWT?i0
-R5
-IDa<4G8QZ2:7`@321U_cD_2
 R6
-w1765633306
-8D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/IF2ID.v
-FD:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/IF2ID.v
-!i122 844
-Z19 L0 3 30
-R10
+I6MHUG82hYS_d7mdEz58^31
+R7
+R17
+8C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/IF2ID.v
+FC:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/IF2ID.v
+!i122 1057
+Z21 L0 3 30
 R11
+R12
 r1
 !s85 0
 31
 R18
-!s107 D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/IF2ID.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/IF2ID.v|
+!s107 C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/IF2ID.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/IF2ID.v|
 !i113 0
-R15
-R2
+R16
+R3
 n@i@f2@i@d
 vIFstage
-R17
+R5
 !i10b 1
 !s100 z<YamNBa1RS[YLQFLP?TI0
-R5
-IENzBIGlKN9PVkNcZ>hge43
 R6
-R16
-8D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/IFstage.v
-FD:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/IFstage.v
-!i122 845
-R19
-R10
+IN6GUEmY_[CmLi_Qz?0[8]2
+R7
+R17
+8C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/IFstage.v
+FC:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/IFstage.v
+!i122 1058
+R21
 R11
+R12
 r1
 !s85 0
 31
 R18
-!s107 D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/IFstage.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/IFstage.v|
+!s107 C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/IFstage.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/IFstage.v|
 !i113 0
-R15
-R2
+R16
+R3
 n@i@fstage
 vinst_memory
-R4
-!i10b 1
-!s100 nBm2ID1VRXlj[D0kWP[YN1
 R5
-Il;42TC27277Y_oXz79Nh[2
+!i10b 1
+!s100 zThFY^i5b7Tol?Q6<1lY33
 R6
+Ioz=I>8NP5;3^mPdgkdH?W1
 R7
 R8
 R9
-!i122 837
-L0 175 13
 R10
+!i122 1050
+L0 174 13
 R11
+R12
 r1
 !s85 0
 31
-R12
 R13
 R14
-!i113 0
 R15
-R2
+!i113 0
+R16
+R3
 vMEM2WB
-R17
+R5
 !i10b 1
 !s100 <2nC?U6L0=7nJ<BNFV:[81
-R5
-IALfAbRH`Af^SCRM89@gT_2
 R6
-R16
-8D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/MEM2WB.v
-FD:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/MEM2WB.v
-!i122 846
+IUa5BUoJSd`bkNhf1zz`MU3
+R7
+R17
+8C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/MEM2WB.v
+FC:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/MEM2WB.v
+!i122 1059
 L0 3 45
-R10
 R11
+R12
 r1
 !s85 0
 31
 R18
-!s107 D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/MEM2WB.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/MEM2WB.v|
+!s107 C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/MEM2WB.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/MEM2WB.v|
 !i113 0
-R15
-R2
+R16
+R3
 n@m@e@m2@w@b
 vMEMstage
-R17
+R5
 !i10b 1
 !s100 XD4fG]@>a]Z:h`e4hh>UN2
-R5
-IUMQQ7<TMS4`ifdn>Tc=jE3
 R6
-R16
-8D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/MEMstage.v
-FD:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/MEMstage.v
-!i122 847
-Z20 L0 1 18
-R10
+I@H>B0@XO4WHokEEkbee3[2
+R7
+R17
+8C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/MEMstage.v
+FC:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/MEMstage.v
+!i122 1060
+Z22 L0 1 18
 R11
+R12
 r1
 !s85 0
 31
 R18
-!s107 D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/MEMstage.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/MEMstage.v|
+!s107 C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/MEMstage.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/MEMstage.v|
 !i113 0
-R15
-R2
+R16
+R3
 n@m@e@mstage
 vmips
-R17
-!i10b 1
-!s100 Lf^[KF6g]onOLcAoli@7G0
 R5
-Il`2;Z_J:kAHV@iB`WF=5R0
+!i10b 1
+!s100 0lj9PiQS24oP3nn7i7eAV2
 R6
-w1765634313
-8D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/mips_pipeline.v
-FD:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/mips_pipeline.v
-!i122 848
-L0 3 327
-R10
+IJ5e:<VGGnVQXH9[WG^CD21
+R7
+w1766035039
+8C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/mips_pipeline.v
+FC:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/mips_pipeline.v
+!i122 1061
+L0 3 357
 R11
+R12
 r1
 !s85 0
 31
 R18
-!s107 D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/mips_pipeline.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/mips_pipeline.v|
+!s107 C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/mips_pipeline.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/mips_pipeline.v|
 !i113 0
-R15
-R2
+R16
+R3
 vmux2_to_1
-R4
+R5
 !i10b 1
 !s100 DGPMzY>ac2`?zTC]5NTn12
-R5
-I]CkQCgiX`QKHj:3:>kLlA1
 R6
+I8EaQ`:18MlD`4GhBJhU__2
 R7
 R8
 R9
-!i122 837
-L0 32 9
 R10
+!i122 1050
+L0 32 9
 R11
+R12
 r1
 !s85 0
 31
-R12
 R13
 R14
-!i113 0
 R15
-R2
+!i113 0
+R16
+R3
 vmux3_to_1
-R4
+R5
 !i10b 1
 !s100 =N:fklV8W1PJl1L>[2^OJ3
-R5
-Ic6hSRiHUkU6Y6LAkg][2J1
 R6
+I?^Dfok_PbQGc>K65ZJAXa1
 R7
 R8
 R9
-!i122 837
-L0 8 17
 R10
+!i122 1050
+L0 8 17
 R11
+R12
 r1
 !s85 0
 31
-R12
 R13
 R14
-!i113 0
 R15
-R2
+!i113 0
+R16
+R3
 vpc
-R17
-!i10b 1
-!s100 `KLGH3nPlB;UV>;2M;9o@3
 R5
-IE8k;z2bB[5D@O`dMRMK^b0
+!i10b 1
+!s100 >TKl;Yn=9NbYCoiihKcL:3
 R6
-w1765636804
-8D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/pc.v
-FD:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/pc.v
-!i122 849
-L0 3 20
-R10
+IG]KNd_d;a;ggAB1LzbAWO2
+R7
+w1766130403
+8C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/pc.v
+FC:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/pc.v
+!i122 1062
+L0 3 19
 R11
+R12
 r1
 !s85 0
 31
 R18
-!s107 D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/pc.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/pc.v|
+!s107 C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/pc.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/pc.v|
 !i113 0
-R15
-R2
+R16
+R3
 vreg_file
-R4
-!i10b 1
-!s100 m`9:jKgSI[>Z41m]nIAXQ2
 R5
-IRfz1Ac0Z`KzdJe5LEUi2B2
+!i10b 1
+!s100 iE83N@ffTDA^6bH8O[9X_3
 R6
+IV1_L2C3B>:Q^@8T?75DX01
 R7
 R8
 R9
-!i122 837
-L0 150 24
 R10
+!i122 1050
+L0 150 23
 R11
+R12
 r1
 !s85 0
 31
-R12
 R13
 R14
-!i113 0
 R15
-R2
+!i113 0
+R16
+R3
 vshl2
-R4
+R5
 !i10b 1
 !s100 O<@6mTI1]^dYlhRLQICOQ2
-R5
-I9P<GfeiJ:L>EMYkQc[7<M3
 R6
+IcLUPgk=YPzJcm@XFZefCE0
 R7
 R8
 R9
-!i122 837
-L0 48 4
 R10
+!i122 1050
+L0 48 4
 R11
+R12
 r1
 !s85 0
 31
-R12
 R13
 R14
-!i113 0
 R15
-R2
+!i113 0
+R16
+R3
 vsign_extension
-R4
+R5
 !i10b 1
 !s100 0PJ`M9iMI^aIGbznH<`M60
-R5
-ID?GT01>Ca2Y05cLQR`zKb1
 R6
+IVgjb606lDO@Ma43BUl29o0
 R7
 R8
 R9
-!i122 837
-L0 43 4
 R10
+!i122 1050
+L0 43 4
 R11
+R12
 r1
 !s85 0
 31
-R12
 R13
 R14
-!i113 0
 R15
-R2
+!i113 0
+R16
+R3
 vtb
-Z21 !s110 1765731543
-!i10b 1
-!s100 OMgaXmNWb3?bJ2m;S4neh2
 R5
-Ie0S_DkhMIXYn?LDWUCmBh2
+!i10b 1
+!s100 U5gY]zF0a1C9BcPk8JTF10
 R6
-w1765730728
-8D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/Tb.v
-FD:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/Tb.v
-!i122 850
+IHFF23DkjG3T5N@]e^e:[?1
+R7
+w1766131249
+8C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/Tb.v
+FC:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/Tb.v
+!i122 1063
 L0 2 18
-R10
 R11
+R12
 r1
 !s85 0
 31
 R18
-!s107 D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/Tb.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/Tb.v|
+!s107 C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/Tb.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/Tb.v|
 !i113 0
-R15
-R2
+R16
+R3
 Ttb_opt41
 !s110 1765465112
 V:H@k[=`81c4o0;6GE=`361
 R1
-Z22 o+acc
-R2
-ntb_opt41
+Z23 o+acc
 R3
+ntb_opt41
+R4
 R0
 Ttb_opt42
 !s110 1765465368
 VRTenK14bF?=0kLZ[mmV1z1
 R1
-R22
-R2
-ntb_opt42
+R23
 R3
+ntb_opt42
+R4
 R0
 Ttb_opt43
 !s110 1765468882
 V9N>LN45FjiGm532EzCDM?0
 R1
-R22
-R2
-ntb_opt43
+R23
 R3
+ntb_opt43
+R4
 R0
 Ttb_opt44
 !s110 1765469395
 VdC[e?lcek3QSnn:JdfGSI1
 R1
-R22
-R2
-ntb_opt44
+R23
 R3
+ntb_opt44
+R4
 R0
 Ttb_opt45
 !s110 1765469738
 VG[:VT07TYUkeSmU?hnbW41
 R1
-R22
-R2
-ntb_opt45
+R23
 R3
+ntb_opt45
+R4
 R0
 Ttb_opt46
 !s110 1765470347
 VnU8I>J8i9]k@aM_AflOj50
 R1
-R22
-R2
-ntb_opt46
+R23
 R3
+ntb_opt46
+R4
 R0
 Ttb_opt47
 !s110 1765470882
 V1ICeA1X_miSOYJ2CmY7Ck3
 R1
-R22
-R2
-ntb_opt47
+R23
 R3
+ntb_opt47
+R4
 R0
 Ttb_opt48
 !s110 1765471398
 V[iAOGMgk0hl:EFL3]R64S2
 R1
-R22
-R2
-ntb_opt48
+R23
 R3
+ntb_opt48
+R4
 R0
 Ttb_opt49
 !s110 1765471726
 VMT;fgKH2j[SRNXgV`98c:1
 R1
-R22
-R2
-ntb_opt49
+R23
 R3
+ntb_opt49
+R4
 R0
 Ttb_opt50
 !s110 1765472004
 V;Z`eFb5Z_9?1Z>`W2D7Gg1
 R1
-R22
-R2
-ntb_opt50
+R23
 R3
+ntb_opt50
+R4
 R0
 Ttb_opt51
 !s110 1765472965
 V<a@^8QzP_OVA;J<f5QfzH3
 R1
-R22
-R2
-ntb_opt51
+R23
 R3
+ntb_opt51
+R4
 R0
 Ttb_opt52
 !s110 1765474232
 VE7PlY4W^ilmUYeN251QOH0
 R1
-R22
-R2
-ntb_opt52
+R23
 R3
+ntb_opt52
+R4
 R0
 Ttb_opt53
 !s110 1765475569
 VXAQLDn<GBRjW5MoH91djZ2
 R1
-R22
-R2
-ntb_opt53
+R23
 R3
+ntb_opt53
+R4
 R0
 Ttb_opt54
 !s110 1765480980
 VFU9mIQm[j6V5R2^Mo?1`Z2
 R1
-R22
-R2
-ntb_opt54
+R23
 R3
+ntb_opt54
+R4
 R0
 Ttb_opt55
 !s110 1765481552
 VcNPJ1fHnHUcXU[PUk2Jnl0
 R1
-R22
-R2
-ntb_opt55
+R23
 R3
+ntb_opt55
+R4
 R0
 Ttb_opt56
 !s110 1765483576
 V[279jbjZB8UWhY5VRkW;G3
 R1
-R22
-R2
-ntb_opt56
+R23
 R3
+ntb_opt56
+R4
 R0
 Ttb_opt57
 !s110 1765484048
 V7Cd7Kd0[hE>nBK0673jlN1
 R1
-R22
-R2
-ntb_opt57
+R23
 R3
+ntb_opt57
+R4
 R0
 Ttb_opt58
 !s110 1765484621
 V<fFCZGc<;B9`0lPnR<<a`0
 R1
-R22
-R2
-ntb_opt58
+R23
 R3
+ntb_opt58
+R4
 R0
 Ttb_opt59
 !s110 1765485041
 VZ_nAo?c^jGfm>@B401_1o3
 R1
-R22
-R2
-ntb_opt59
+R23
 R3
+ntb_opt59
+R4
 R0
 Ttb_opt60
 !s110 1765485534
 VAX?^J2?^OAcGB66>fDaNH2
 R1
-R22
-R2
-ntb_opt60
+R23
 R3
+ntb_opt60
+R4
 R0
 Ttb_opt61
 !s110 1765485727
 VDj2nz?jRh;Kg5S8;?727;3
 R1
-R22
-R2
-ntb_opt61
+R23
 R3
+ntb_opt61
+R4
 R0
 Ttb_opt62
 !s110 1765486786
 VWFY1zB95>e`@CzjocnHlD3
 R1
-R22
-R2
-ntb_opt62
+R23
 R3
+ntb_opt62
+R4
 R0
 Ttb_opt72
 !s110 1765637096
 VLa?A[dXaA2;09kcgBFndZ2
 R1
-R22
-R2
-ntb_opt72
+R23
 R3
+ntb_opt72
+R4
 R0
 Ttb_opt73
 !s110 1765638306
 VFgVLm`fk:I6S9i21giU023
 R1
-R22
-R2
-ntb_opt73
+R23
 R3
+ntb_opt73
+R4
 R0
 Ttb_opt74
 !s110 1765640082
 V_2hdoCU>ImDaXF^?fhPF92
 R1
-R22
-R2
-ntb_opt74
+R23
 R3
+ntb_opt74
+R4
 R0
 Ttb_opt75
 !s110 1765643085
 V38I75L:jGMT@0=MK6_1KN1
 R1
-R22
-R2
-ntb_opt75
+R23
 R3
+ntb_opt75
+R4
 R0
 Ttb_opt76
 !s110 1765643543
 V3gjY2kb?9B_7HCa@O4^Rm0
 R1
-R22
-R2
-ntb_opt76
+R23
 R3
+ntb_opt76
+R4
 R0
 Ttb_opt77
 !s110 1765717336
 Vn:MKjP1ZUN?eOh9Y30k@20
 R1
-R22
-R2
-ntb_opt77
+R23
 R3
+ntb_opt77
+R4
 R0
 Ttb_opt78
 !s110 1765723798
 VJYDK_5WXknfE[55FJ7ko62
 R1
-R22
-R2
-ntb_opt78
+R23
 R3
+ntb_opt78
+R4
 R0
 Ttb_opt79
 !s110 1765724123
 VgRUPfHS]fHF:Jd3zZQ9MD2
 R1
-R22
-R2
-ntb_opt79
+R23
 R3
+ntb_opt79
+R4
 R0
 Ttb_opt80
 !s110 1765725960
 V?W=UPmCBVbUa[@UWQmA>R3
 R1
-R22
-R2
-ntb_opt80
+R23
 R3
+ntb_opt80
+R4
 R0
 Ttb_opt81
 !s110 1765729254
 V4_j=jzEf3Dk96K]95GD[@3
 R1
-R22
-R2
-ntb_opt81
+R23
 R3
+ntb_opt81
+R4
 R0
 Ttb_opt82
 !s110 1765729690
 VdoonNbOXXa8jnmYcHm^[63
 R1
-R22
-R2
-ntb_opt82
+R23
 R3
+ntb_opt82
+R4
 R0
 Ttb_opt83
 !s110 1765730278
 V5amn1JdVG2?e4zjZ4hP^L3
 R1
-R22
-R2
-ntb_opt83
+R23
 R3
+ntb_opt83
+R4
 R0
 Ttb_opt84
 !s110 1765730779
 V3eGF6=:NGIV9WjE<FM`@?2
 R1
-R22
-R2
-ntb_opt84
+R23
 R3
+ntb_opt84
+R4
 R0
 Ttb_opt85
 !s110 1765731116
 VJgJ9LTgF?JkT:nIe;:hz=1
 R1
-R22
-R2
-ntb_opt85
+R23
 R3
+ntb_opt85
+R4
 R0
 Ttb_opt86
 !s110 1765731225
 VHJT62nS6=^R0C70g>WgI?1
 R1
-R22
-R2
-ntb_opt86
+R23
 R3
+ntb_opt86
+R4
 R0
 Ttb_opt87
 !s110 1765731553
 V8AUO6:]KL^N8Bo<3EAJf=3
 R1
-R22
-R2
-ntb_opt87
+R23
 R3
+ntb_opt87
+R4
+R0
 vWBstage
-R21
+R19
 !i10b 1
 !s100 _0WlQZ0TGQfWhze7f9nD[3
-R5
-IJAG4:kFQo_RNPPfc]aZE:2
 R6
-R16
-8D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/WBstage.v
-FD:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/WBstage.v
-!i122 851
-R20
-R10
+I1zIWbP0oHFjHIYD8AGhn00
+R7
+R17
+8C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/WBstage.v
+FC:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/WBstage.v
+!i122 1064
+R22
 R11
+R12
 r1
 !s85 0
 31
-!s108 1765731543.000000
-!s107 D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/WBstage.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/Lessons_Uni/master/Advanced computer architecture/HW_verilog/stall/WBstage.v|
+R20
+!s107 C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/WBstage.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/mardin/Documents/AD_CA/CA1/MIPS-Arch/hazard_detection/WBstage.v|
 !i113 0
-R15
-R2
+R16
+R3
 n@w@bstage

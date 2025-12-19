@@ -12,8 +12,7 @@ module pc(
         if (rst) begin
             out <= 32'b0;
         end
-        else if (en) begin
-            
+        else if (en) begin  
             out <= in;
         end
        

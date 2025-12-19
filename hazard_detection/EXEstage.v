@@ -2,7 +2,6 @@
 
 module EXEstage (
     input wire              clk, 
-   
     input wire [31:0]       read_data1_reg, 
     input wire [31:0]       read_data2_reg, 
     input wire [31:0]       inst_extended,  
@@ -51,7 +50,6 @@ module EXEstage (
         endcase
     end
 
-    
     always @(*) begin
         case (ForwardB)
             2'b00: mux_B_out = read_data2_reg; 

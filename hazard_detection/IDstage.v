@@ -5,7 +5,10 @@ module IDstage (
     instruction, // if2id
     write_reg, // to reg
     write_data_reg, 
+    fw_rs,
+    fw_rt,
     pcPlus4,
+    alu_result_mem,
     // RegDst, // controller 
     inst_extended, // to reg
     read_data1_reg,read_data2_reg , // to reg
@@ -14,15 +17,15 @@ module IDstage (
     zero  // to controller
 );
     input 					clk,rst;
-	input           		RegWrite;
+	input           		RegWrite,fw_rs,fw_rt;
     wire        [31:0]      shifted_inst_extended; 
     wire [31:0]      inst_extended_internal; 
     input wire  [31:0]      write_data_reg; 
-    input wire  [31:0]      pcPlus4, instruction; 
+    input wire  [31:0]      pcPlus4, instruction, alu_result_mem; 
     input wire  [4:0]       write_reg; 
     output wire [31:0]     read_data1_reg,read_data2_reg,branch_adder_id;
     output wire [31:0]      inst_extended; 
-    wire [31:0]     read_data1_reg_internal,read_data2_reg_internal; 
+    wire [31:0]     read_data1_reg_internal,read_data2_reg_internal,read_data1_reg_mux,read_data2_reg_mux; 
     output wire             zero; 
     // goes to id 
 	adder adder2(.data1(shifted_inst_extended),.data2(pcPlus4),.sum(branch_adder_id));
@@ -34,9 +37,11 @@ module IDstage (
 	// assign func=instruction[5:0];
 	// assign opcode =instruction[31:26];
     // //comparator
-    assign read_data1_reg = read_data1_reg_internal; 
-    assign read_data2_reg = read_data2_reg_internal; 
-    assign zero = (read_data1_reg == read_data2_reg);
+    mux2_to_1 #32 mux_reg1(.data1(read_data1_reg_internal), .data2(alu_result_mem), .sel(fw_rs), .out(read_data1_reg_mux)); 
+    mux2_to_1 #32 mux_reg2(.data1(read_data2_reg_internal), .data2(alu_result_mem), .sel(fw_rt), .out(read_data2_reg_mux)); 
+    assign read_data1_reg = read_data1_reg_mux; 
+    assign read_data2_reg = read_data2_reg_mux; 
+    assign zero = (read_data1_reg_mux == read_data2_reg_mux);
 endmodule
 
 

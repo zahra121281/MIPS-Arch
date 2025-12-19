@@ -131,7 +131,7 @@ module alu(
             4'b1000: alu_result = data2 >> data1[4:0];
             4'b1001: alu_result = $signed(data2) >>> data1[4:0];
             4'b1111: alu_result = {data2[15:0], 16'b0};
-            
+            4'b1111: alu_result = {data2[15:0], 16'b0};
             default: alu_result = 32'd0;
         endcase
     end
@@ -160,14 +160,13 @@ module reg_file(input clk,rst,RegWrite,input [4:0] read_reg1,read_reg2,write_reg
 			if(RegWrite && write_reg != 5'd0) register[write_reg]<=write_data;
 		end
 
-        $display("CLK=%0t | rr1=%0d rr2=%0d | rd1=%h rd2=%h | wr=%d wd=%0d rw=%0d",
-              $time, read_reg1, read_reg2, read_data1, read_data2, write_reg, write_data, RegWrite);
+        // $display("CLK=%0t | rr1=%0d rr2=%0d | rd1=%h rd2=%h | wr=%d wd=%0d rw=%0d",
+        //       $time, read_reg1, read_reg2, read_data1, read_data2, write_reg, write_data, RegWrite);
 	end
 	//assign read_data1=register[read_reg1];
 	//assign read_data2=register[read_reg2];
 
     assign read_data1 = (RegWrite && (write_reg == read_reg1) && (write_reg != 0)) ? write_data : register[read_reg1];
-    
     assign read_data2 = (RegWrite && (write_reg == read_reg2) && (write_reg != 0)) ? write_data : register[read_reg2];
 
 endmodule
@@ -179,10 +178,10 @@ module inst_memory(input rst,input [31:0]adr,output [31:0]instruction) ;
   	end
 	assign instruction=mem_inst[adr>>2];
 
-    always @(adr) begin
-        #1;
-        $display("[FETCH] Time=%0t | PC=%0d | Instruction Hex=%h", $time, adr, instruction);
-    end
+    // always @(adr) begin
+    //     #1;
+    //     // $display("[FETCH] Time=%0t | PC=%0d | Instruction Hex=%h", $time, adr, instruction);
+    // end
 
 endmodule
 
@@ -230,7 +229,6 @@ module data_memory(
 
     assign out1 = mem_data[500];
     assign out2 = mem_data[501];
-
 endmodule
 
 /*

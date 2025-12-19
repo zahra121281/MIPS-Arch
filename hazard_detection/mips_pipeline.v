@@ -26,7 +26,11 @@ module mips(
 	wire [31:0] branch_adder_id;
 	wire 		zero_ID;
 	wire [31:0] jump_address;
-
+	// hazard controll unit (branch)
+	wire stall_beq;
+	// -- fu_br
+	wire fw_rs;
+	wire fw_rt;
 	// --- EXE Stage Signals ---
 	wire [31:0] pc_exe, inst_extended_exe;
 	wire [31:0] reg_data1_exe, reg_data2_exe;
@@ -53,7 +57,7 @@ module mips(
 	// --- HAZARD & FORWARDING SIGNALS ---
 	wire 		Stall;
 	wire 		Stall_n; 
-	assign 		Stall_n = ~Stall; // Active Low Enable for Freeze
+	assign 		Stall_n = ~(Stall || stall_beq); // Active Low Enable for Freeze
 
 	wire [1:0] 	ForwardA, ForwardB;
 	wire 		PCSrc; // Logic for Branch Taken
@@ -146,6 +150,9 @@ module mips(
 		.rst(rst), 
 		.RegWrite(Regwrite_wb), 
 		.instruction(instruction_id), 
+		.fw_rs(fw_rs),
+		.fw_rt(fw_rt),
+		.alu_result_mem(alu_result_mem),
 		.write_reg(write_reg_wb),
 		.write_data_reg(write_data_reg_wb),
 		.inst_extended(inst_extended_id), 
@@ -154,6 +161,29 @@ module mips(
 		.pcPlus4(pc_id),
 		.zero(zero_ID),
 		.branch_adder_id(branch_adder_id)
+	);
+
+
+	// -- HDU_BR
+	HazardU_br hazardU_br (
+		.id2ex_RegWrite(Regwrite_exe),
+		.exe2mem_memRead(MemRead_mem),
+		.branch(Branch),
+		.id2exe_writeRegister(write_reg_exe),
+		.exe2mem_writeRegister(write_reg_mem),
+		.if2id_readRegister_rs(instruction_id[25:21]),
+		.if2id_readRegister_rt(instruction_id[20:16]),
+		.stall_beq(stall_beq) 
+	);
+
+	// -- FU_br
+	ForwardU_br forwardU_br(
+		.ex2mem_writeRegister(write_reg_mem),
+		.if2id_readRegister_rs(instruction_id[25:21]),
+		.if2id_readRegister_rt(instruction_id[20:16]),
+		.ex2mem_regWrite(Regwrite_mem),
+		.fw_rs(fw_rs),
+		.fw_rt(fw_rt)
 	);
 
 	// --- CONTROLLER ---

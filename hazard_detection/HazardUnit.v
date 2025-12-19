@@ -22,7 +22,6 @@ module HazardUnit(
        
         if (MemRead_EXE && (Rt_EXE != 0) && ((Rt_EXE == Rs_ID) || (Rt_EXE == Rt_ID)))
             Stall = 1'b1;
-            
         // 2. Branch Data Hazard (Alu to Branch)
        
         else if (Branch_ID && RegWrite_EXE && (WriteReg_EXE != 0) && 
